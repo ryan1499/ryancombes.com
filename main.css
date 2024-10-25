@@ -24,3 +24,7 @@ a:hover {
     text-align: center;
     padding: 5px;
 }
+
+ul {
+    line-height: 1.5;
+}
