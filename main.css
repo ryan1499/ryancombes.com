@@ -12,6 +12,10 @@ a:hover {
     cursor: pointer;
 }
 
+p, h5 {
+    font: lora;
+}
+
 #mc_embed_signup {
     max-width: 400px;
 }
