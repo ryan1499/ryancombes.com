@@ -12,7 +12,7 @@ a:hover {
     cursor: pointer;
 }
 
-p, h5 {
+p, h1, h3, h5 {
     font: lora;
 }
 
