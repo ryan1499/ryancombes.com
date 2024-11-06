@@ -12,9 +12,9 @@ a:hover {
     cursor: pointer;
 }
 
-p, h1, h3, h5 {
+p, h1, h3, h5, ul {
     font-family: Lora;
-    font-size: 1.5em; 
+    font-size: 1.4em; 
 }
 
 #mc_embed_signup {
