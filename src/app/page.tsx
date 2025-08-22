@@ -108,7 +108,7 @@ export default function Home() {
             </h1>
             
             <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal mb-4" style={{color: '#5A5856'}}>
-              I write about fear, courage, and meaning.
+              I write about overcoming fear, finding courage, and living with meaning.
             </p>
             <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal" style={{color: '#5A5856'}}>
               Join me exploring what it means to live 
