@@ -37,7 +37,7 @@ export default function Footer() {
       } else {
         setMessage(data.error || 'Failed to subscribe. Please try again.')
       }
-    } catch (error) {
+    } catch {
       setMessage('Failed to subscribe. Please try again.')
     }
 
@@ -68,7 +68,7 @@ export default function Footer() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email..."
                 className="px-4 py-2 border border-r-0 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white"
-                style={{borderColor: '#DFDFDF', focusRingColor: '#747C5DFF'}}
+                style={{borderColor: '#DFDFDF'}}
                 required
               />
               <button

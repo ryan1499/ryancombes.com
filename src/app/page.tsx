@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Twitter, Linkedin, Instagram, Youtube, FileText } from 'lucide-react'
+import { Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -76,7 +76,7 @@ export default function Home() {
       } else {
         setMessage(data.error || 'Failed to subscribe. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setMessage('Failed to subscribe. Please try again.');
     }
 
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
-              Hey — I'm Ryan
+              Hey — I&apos;m Ryan
             </h1>
             
             <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal" style={{color: '#5A5856'}}>
@@ -165,7 +165,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center space-x-6"
           >
-            {socialLinks.map((link, index) => (
+            {socialLinks.map((link) => (
               <motion.a
                 key={link.label}
                 href={link.href}

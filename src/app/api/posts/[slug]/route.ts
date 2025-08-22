@@ -35,7 +35,7 @@ export async function GET(
     }
 
     const postsData = await postsResponse.json();
-    const post = postsData.data?.find((p: any) => p.slug === slug);
+    const post = postsData.data?.find((p: { slug: string }) => p.slug === slug);
 
     if (!post) {
       return NextResponse.json(
@@ -65,10 +65,10 @@ export async function GET(
     const fullPost = fullPostData.data;
 
     // Extract and clean the HTML content from the expanded response
-    let rawHtml = fullPost.content?.free?.web || 
-                  fullPost.free_web_content || 
-                  fullPost.content_html || 
-                  '';
+    const rawHtml = fullPost.content?.free?.web || 
+                    fullPost.free_web_content || 
+                    fullPost.content_html || 
+                    '';
 
     // Parse and extract just the article content, removing Beehiiv's page structure
     let cleanedContent = '';
@@ -127,10 +127,13 @@ export async function GET(
         $('.rendered-post, .email-wrapper, [class*="wrapper"]').each((i, el) => {
           const $el = $(el);
           // Unwrap the content but keep the inner HTML
-          $el.replaceWith($el.html());
+          const html = $el.html();
+          if (html) {
+            $el.replaceWith(html);
+          }
         });
         
-        articleContent = $('body').html();
+        articleContent = $('body').html() || '';
       }
       
       // Final cleanup pass - preserve Beehiiv's div structure

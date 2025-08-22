@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
 
@@ -43,7 +42,7 @@ export default function About() {
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                When I'm not writing, I work in growth marketing, helping companies connect with their audiences in meaningful ways.
+                When I&apos;m not writing, I work in growth marketing, helping companies connect with their audiences in meaningful ways.
               </p>
             </div>
 
@@ -56,13 +55,13 @@ export default function About() {
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                This question drives much of my writing — the tension between safety and truth, between fitting in and standing out, between the life we're expected to live and the one we're called to create.
+                This question drives much of my writing — the tension between safety and truth, between fitting in and standing out, between the life we&apos;re expected to live and the one we&apos;re called to create.
               </p>
             </div>
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                If you're interested in exploring these themes of philosophy, mindfulness, and spirituality together, I'd love to have you join me on this journey.
+                If you&apos;re interested in exploring these themes of philosophy, mindfulness, and spirituality together, I&apos;d love to have you join me on this journey.
               </p>
             </div>
           </div>

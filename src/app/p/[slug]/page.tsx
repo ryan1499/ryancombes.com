@@ -1,9 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
-import { useState, useEffect, use } from 'react'
+import { useState, useEffect, use, useCallback } from 'react'
 import { ArrowLeft, Mail } from 'lucide-react'
 
 type Post = {
@@ -25,11 +24,7 @@ export default function PostPage({ params }: { params: Promise<{ slug: string }>
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    fetchPost();
-  }, [resolvedParams.slug]);
-
-  const fetchPost = async () => {
+  const fetchPost = useCallback(async () => {
     try {
       const response = await fetch(`/api/posts/${resolvedParams.slug}`);
       const data = await response.json();
@@ -45,7 +40,11 @@ export default function PostPage({ params }: { params: Promise<{ slug: string }>
     } finally {
       setLoading(false);
     }
-  };
+  }, [resolvedParams.slug]);
+
+  useEffect(() => {
+    fetchPost();
+  }, [fetchPost]);
 
   const formatDate = (timestamp: string) => {
     const date = new Date(parseInt(timestamp) * 1000);
@@ -56,22 +55,6 @@ export default function PostPage({ params }: { params: Promise<{ slug: string }>
     });
   };
 
-  const sharePost = async () => {
-    if (navigator.share && post) {
-      try {
-        await navigator.share({
-          title: post.title,
-          text: post.subtitle,
-          url: window.location.href,
-        });
-      } catch (error) {
-        console.log('Error sharing:', error);
-      }
-    } else {
-      // Fallback: copy to clipboard
-      navigator.clipboard.writeText(window.location.href);
-    }
-  };
 
   if (loading) {
     return (

@@ -1,4 +1,20 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server'
+
+interface BeehiivPost {
+  id: string;
+  title: string;
+  subtitle?: string;
+  slug: string;
+  published_at: number;
+  publish_date?: string;
+  web_url: string;
+  thumbnail_url?: string;
+  excerpt?: string;
+  content_tags?: string[];
+  content?: { free?: { web?: string } };
+  free_web_content?: string;
+  content_html?: string;
+};
 
 export async function GET() {
   try {
@@ -31,7 +47,7 @@ export async function GET() {
     const data = await response.json();
     
     // Transform the data to match our frontend needs
-    const posts = data.data?.map((post: any) => {
+    const posts = data.data?.map((post: BeehiivPost) => {
       // Extract HTML content if available
       const htmlContent = post.content?.free?.web || post.free_web_content || post.content_html || '';
       
