@@ -118,24 +118,24 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto mb-8"
+            className="bg-white rounded-lg p-8 shadow-sm max-w-xl mx-auto mb-12"
             style={{border: `1px solid #DFDFDF`}}
           >
-            <h2 className="text-xl font-playfair font-normal mb-3" style={{color: '#1F1F1F'}}>
+            <h2 className="text-2xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
               Brave Enough Newsletter
             </h2>
-            <p className="mb-4 text-sm font-normal" style={{color: '#5A5856'}}>
+            <p className="mb-6 text-base font-normal" style={{color: '#5A5856'}}>
               Weekly insights on inner work, courage, and authentic living.
             </p>
             
-            <form onSubmit={handleSubscribe} className="space-y-4">
+            <form onSubmit={handleSubscribe} className="space-y-5">
               <input
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-4 py-3 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent"
+                className="w-full px-5 py-4 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent text-base"
                 style={{borderColor: '#DFDFDF', color: '#1F1F1F'}}
                 onFocus={(e) => e.target.style.borderColor = '#747C5DFF'}
                 onBlur={(e) => e.target.style.borderColor = '#DFDFDF'}
@@ -145,13 +145,13 @@ export default function Home() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isLoading}
-                className="w-full text-white font-normal py-3 px-6 rounded-lg transition-all duration-200 shadow-sm disabled:opacity-50"
+                className="w-full text-white font-normal py-4 px-6 rounded-lg transition-all duration-200 shadow-sm disabled:opacity-50 text-base"
                 style={{backgroundColor: '#747C5DFF'}}
               >
                 {isLoading ? 'Subscribing...' : 'Subscribe'}
               </motion.button>
               {message && (
-                <p className={`text-sm text-center ${message.includes('Successfully') ? 'text-green-600' : 'text-red-600'}`}>
+                <p className={`text-base text-center ${message.includes('Successfully') ? 'text-green-600' : 'text-red-600'}`}>
                   {message}
                 </p>
               )}
@@ -163,7 +163,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center space-x-6"
+            className="flex justify-center space-x-8 mb-16"
           >
             {socialLinks.map((link) => (
               <motion.a
@@ -173,12 +173,12 @@ export default function Home() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-white rounded-full shadow-sm transition-colors"
+                className="p-4 bg-white rounded-full shadow-sm transition-colors"
                 style={{border: `1px solid #DFDFDF`, color: '#5A5856'}}
                 onMouseEnter={(e) => e.currentTarget.style.color = '#747C5DFF'}
                 onMouseLeave={(e) => e.currentTarget.style.color = '#5A5856'}
               >
-                <link.icon size={24} />
+                <link.icon size={28} />
               </motion.a>
             ))}
           </motion.div>
