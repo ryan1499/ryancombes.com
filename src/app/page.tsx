@@ -107,8 +107,11 @@ export default function Home() {
               Hey — I&apos;m Ryan Combes
             </h1>
             
+            <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal mb-4" style={{color: '#5A5856'}}>
+              I write about fear, courage, and meaning.
+            </p>
             <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal" style={{color: '#5A5856'}}>
-              I write about fear, courage, and meaning. Join me exploring what it means to live 
+              Join me exploring what it means to live 
               <span className="font-semibold" style={{color: '#747C5DFF'}}> brave enough</span>.
             </p>
           </motion.div>

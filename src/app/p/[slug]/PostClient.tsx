@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
 
 type Post = {
   id: string;
@@ -23,7 +22,24 @@ interface PostClientProps {
 
 export default function PostClient({ post }: PostClientProps) {
   const formatDate = (timestamp: string) => {
-    const date = new Date(parseInt(timestamp) * 1000);
+    // Try different date formats
+    let date: Date;
+    
+    // First try parsing as timestamp (milliseconds)
+    if (!isNaN(Number(timestamp))) {
+      const num = Number(timestamp);
+      // If it's a small number, it might be seconds, so convert to milliseconds
+      date = new Date(num > 10000000000 ? num : num * 1000);
+    } else {
+      // Try parsing as ISO string or other formats
+      date = new Date(timestamp);
+    }
+    
+    // Fallback to current date if parsing failed
+    if (isNaN(date.getTime())) {
+      date = new Date();
+    }
+    
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
       month: 'long', 
@@ -34,22 +50,6 @@ export default function PostClient({ post }: PostClientProps) {
   return (
     <div className="min-h-screen" style={{backgroundColor: '#FAF8F2'}}>
       <article className="max-w-4xl mx-auto px-6 py-8">
-        {/* Back Button */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8"
-        >
-          <Link 
-            href="/"
-            className="inline-flex items-center space-x-2 hover:opacity-70 transition-opacity"
-            style={{color: '#5A5856'}}
-          >
-            <ArrowLeft size={20} />
-            <span>Back to Letters</span>
-          </Link>
-        </motion.div>
 
         {/* Article Header */}
         <header className="mb-8">
@@ -62,7 +62,7 @@ export default function PostClient({ post }: PostClientProps) {
             <nav className="mb-4 text-sm" style={{color: '#5A5856'}}>
               <Link href="/" className="hover:underline">Home</Link>
               <span className="mx-2">→</span>
-              <span>Letters</span>
+              <Link href="/archive" className="hover:underline">Letters</Link>
               <span className="mx-2">→</span>
               <span className="font-medium">{post.title}</span>
             </nav>
@@ -77,11 +77,18 @@ export default function PostClient({ post }: PostClientProps) {
               </h2>
             )}
             
-            <div className="flex items-center justify-between text-sm border-b pb-4 mb-8" style={{borderColor: '#DFDFDF', color: '#5A5856'}}>
+            <div className="flex items-center justify-between text-sm border-b pb-4 mb-4" style={{borderColor: '#DFDFDF', color: '#5A5856'}}>
               <div className="flex items-center space-x-4">
                 <span>By Ryan Combes</span>
                 <span>•</span>
-                <time dateTime={new Date(parseInt(post.publishedAt) * 1000).toISOString()}>
+                <time dateTime={(() => {
+                  const num = Number(post.publishedAt);
+                  if (!isNaN(num)) {
+                    return new Date(num > 10000000000 ? num : num * 1000).toISOString();
+                  }
+                  const date = new Date(post.publishedAt);
+                  return isNaN(date.getTime()) ? new Date().toISOString() : date.toISOString();
+                })()}>
                   {formatDate(post.publishedAt)}
                 </time>
                 <span>•</span>
@@ -90,9 +97,6 @@ export default function PostClient({ post }: PostClientProps) {
             </div>
           </motion.div>
         </header>
-
-        {/* Subtle divider */}
-        <div className="mt-8 mb-12 w-24 h-px mx-auto" style={{backgroundColor: '#DFDFDF'}}></div>
 
         {/* Article Content */}
         <motion.div
@@ -121,7 +125,7 @@ export default function PostClient({ post }: PostClientProps) {
                 Enjoyed this letter?
               </h3>
               <p className="mb-4 text-sm" style={{color: '#5A5856'}}>
-                Join thousands exploring what it means to live brave enough.
+                Join others in exploring what it means to live brave enough.
               </p>
               <Link 
                 href="/"

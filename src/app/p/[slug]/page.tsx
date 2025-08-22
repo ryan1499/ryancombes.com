@@ -74,15 +74,72 @@ async function getPost(slug: string): Promise<Post | null> {
                     fullPost.content_html || 
                     '';
 
-    // Simple content extraction - remove Beehiiv headers and footers
+    // Clean the HTML content while preserving structure
     let cleanedContent = rawHtml;
     if (rawHtml) {
-      // Remove common Beehiiv wrapper elements
+      // Remove Beehiiv specific wrapper classes but preserve div structure
       cleanedContent = rawHtml
-        .replace(/<div[^>]*class="[^"]*email-wrapper[^"]*"[^>]*>/gi, '<div>')
-        .replace(/<div[^>]*class="[^"]*rendered-post[^"]*"[^>]*>/gi, '<div>')
+        // Remove style attributes but keep the HTML structure
+        .replace(/style="[^"]*"/gi, '')
+        // Remove class attributes but keep the HTML structure  
+        .replace(/class="[^"]*"/gi, '')
+        // Remove Beehiiv specific elements
         .replace(/<header[^>]*>[\s\S]*?<\/header>/gi, '')
-        .replace(/<div[^>]*class="[^"]*post-header[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+        .replace(/<nav[^>]*>[\s\S]*?<\/nav>/gi, '')
+        .replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, '')
+        // Remove images (profile pictures)
+        .replace(/<img[^>]*>/gi, '')
+        // Remove duplicate title and subtitle content
+        .replace(new RegExp(fullPost.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '')
+        .replace(new RegExp((fullPost.subtitle || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '')
+        // Remove author info patterns
+        .replace(/Ryan Combes/gi, '')
+        .replace(/By Ryan Combes/gi, '')
+        // Remove date patterns (more comprehensive)
+        .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}\b/gi, '')
+        .replace(/\b\d{1,2}\/\d{1,2}\/\d{4}\b/gi, '')
+        .replace(/\b\d{4}-\d{2}-\d{2}\b/gi, '')
+        .replace(/\d+ min read/gi, '')
+        // Remove social sharing elements
+        .replace(/<a[^>]*href[^>]*facebook[^>]*>[\s\S]*?<\/a>/gi, '')
+        .replace(/<a[^>]*href[^>]*twitter[^>]*>[\s\S]*?<\/a>/gi, '')
+        .replace(/<a[^>]*href[^>]*linkedin[^>]*>[\s\S]*?<\/a>/gi, '')
+        .replace(/<a[^>]*href[^>]*share[^>]*>[\s\S]*?<\/a>/gi, '')
+        // Remove SVG icons (social sharing icons)
+        .replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '')
+        // Remove button elements
+        .replace(/<button[^>]*>[\s\S]*?<\/button>/gi, '')
+        // Remove social sharing icons/dividers
+        .replace(/<div[^>]*>[\s]*<\/div>/gi, '') // Remove empty divs
+        .replace(/━+/g, '') // Remove line dividers
+        .replace(/[\u2500-\u257F]/g, '') // Remove box drawing characters
+        .replace(/<hr[^>]*>/gi, '') // Remove horizontal rules
+        .replace(/<hr[^>]*\/>/gi, '') // Remove self-closing horizontal rules
+        .replace(/___+/g, '') // Remove underscore dividers
+        .replace(/---+/g, '') // Remove dash dividers
+        .replace(/\u2014+/g, '') // Remove em dashes used as dividers
+        .replace(/\u2013+/g, '') // Remove en dashes used as dividers
+        .replace(/\s*\|\s*/g, '') // Remove pipe separators
+        .replace(/\s*•\s*/g, '') // Remove bullet separators
+        // Remove divs that only contain divider-like content
+        .replace(/<div[^>]*>[^a-zA-Z0-9<>]*<\/div>/gi, '')
+        .replace(/<p[^>]*>[^a-zA-Z0-9<>]*<\/p>/gi, '') // Remove paragraphs with only symbols
+        // Remove any remaining horizontal line patterns
+        .replace(/[─━═]+/g, '') // Remove various horizontal line characters
+        .replace(/_{3,}/g, '') // Remove 3+ underscores
+        .replace(/-{3,}/g, '') // Remove 3+ dashes
+        .replace(/={3,}/g, '') // Remove 3+ equals signs
+        // Remove newsletter header patterns that might remain
+        .replace(/^[^<]*?(Brave Enough|Newsletter|Letters on)/i, 'Brave Enough')
+        // Clean up extra whitespace and line breaks
+        .replace(/\s+/g, ' ')
+        .replace(/^\s*<[^>]*>\s*/, '') // Remove leading empty tags
+        .replace(/^[\s\n\r]*/, '') // Remove leading whitespace/newlines
+        .replace(/^[^\w<]*/, '') // Remove leading non-word characters
+        // If content starts with date patterns, remove them
+        .replace(/^[^<]*?\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}[^<]*?(?=\w)/gi, '')
+        .replace(/^[^a-zA-Z<]*/, '') // Remove any remaining leading non-letter characters
+        .trim();
     }
 
     // Estimate read time
@@ -110,7 +167,9 @@ async function getPost(slug: string): Promise<Post | null> {
       readTime: estimateReadTime(cleanedContent),
       tags: fullPost.content_tags || [],
       slug: fullPost.slug,
-      publishedAt: fullPost.published_at?.toString() || fullPost.created?.toString() || '',
+      publishedAt: (fullPost.published_at ? new Date(fullPost.published_at).getTime() : 
+                   fullPost.created ? new Date(fullPost.created).getTime() : 
+                   Date.now()).toString(),
       thumbnailUrl: fullPost.thumbnail_url,
       webUrl: fullPost.web_url,
     };
@@ -178,7 +237,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `https://ryancombes.com/p/${post.slug}`,
       siteName: 'Brave Enough Newsletter',
       type: 'article',
-      publishedTime: new Date(parseInt(post.publishedAt) * 1000).toISOString(),
+      publishedTime: new Date(parseInt(post.publishedAt)).toISOString(),
       authors: ['Ryan Combes'],
       images: post.thumbnailUrl ? [
         {

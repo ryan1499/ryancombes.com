@@ -18,7 +18,7 @@ const karla = Karla({
 
 export const metadata: Metadata = {
   title: "Ryan Combes - Brave Enough Newsletter | Personal Development & Authentic Living",
-  description: "Weekly insights on overcoming fear, finding courage, and living with meaning. Join thousands exploring authentic personal development and what it means to live brave enough.",
+  description: "Weekly insights on overcoming fear, finding courage, and living with meaning. Join others exploring authentic personal development and what it means to live brave enough.",
   keywords: "personal development, overcoming fear, courage, authentic living, meaning, purpose, mindfulness, spirituality, self-improvement, growth mindset, mental health, newsletter",
   authors: [{ name: 'Ryan Combes', url: 'https://ryancombes.com' }],
   creator: 'Ryan Combes',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ryancombes.com'),
   openGraph: {
     title: "Brave Enough Newsletter - Personal Development & Authentic Living",
-    description: "Weekly insights on overcoming fear, finding courage, and living with meaning. Join thousands exploring what it means to live brave enough.",
+    description: "Weekly insights on overcoming fear, finding courage, and living with meaning. Join others exploring what it means to live brave enough.",
     url: 'https://ryancombes.com',
     siteName: 'Brave Enough Newsletter',
     type: 'website',
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     canonical: 'https://ryancombes.com',
   },
   icons: {
-    icon: '/icon.png',
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
+    icon: '/profile.png',
+    shortcut: '/profile.png',
+    apple: '/profile.png',
   },
 };
 
