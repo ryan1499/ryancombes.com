@@ -17,20 +17,103 @@ type Post = {
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
-    const baseUrl = process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}` 
-      : 'http://localhost:3000';
-    
-    const response = await fetch(`${baseUrl}/api/posts/${slug}`, {
-      next: { revalidate: 3600 } // Cache for 1 hour
-    });
-    
-    if (!response.ok) {
+    // Fetch directly from Beehiiv API instead of internal API route
+    const apiKey = process.env.BEEHIIV_API_KEY;
+    if (!apiKey) {
+      console.error('Beehiiv API key not found');
       return null;
     }
-    
-    const data = await response.json();
-    return data.post;
+
+    // First get the post from the posts list
+    const postsResponse = await fetch(
+      'https://api.beehiiv.com/v2/publications/pub_d7682eb0-5603-434c-8b88-35690c42c08a/posts?limit=100&expand=free_web_content',
+      {
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        next: { revalidate: 3600 }
+      }
+    );
+
+    if (!postsResponse.ok) {
+      console.error(`Beehiiv API error: ${postsResponse.status}`);
+      return null;
+    }
+
+    const postsData = await postsResponse.json();
+    const post = postsData.data?.find((p: { slug: string }) => p.slug === slug);
+
+    if (!post) {
+      return null;
+    }
+
+    // Get the full post content
+    const postResponse = await fetch(
+      `https://api.beehiiv.com/v2/publications/pub_d7682eb0-5603-434c-8b88-35690c42c08a/posts/${post.id}?expand=free_web_content`,
+      {
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        next: { revalidate: 3600 }
+      }
+    );
+
+    if (!postResponse.ok) {
+      console.error(`Beehiiv post API error: ${postResponse.status}`);
+      return null;
+    }
+
+    const fullPostData = await postResponse.json();
+    const fullPost = fullPostData.data;
+
+    // Extract and clean the HTML content
+    const rawHtml = fullPost.content?.free?.web || 
+                    fullPost.free_web_content || 
+                    fullPost.content_html || 
+                    '';
+
+    // Simple content extraction - remove Beehiiv headers and footers
+    let cleanedContent = rawHtml;
+    if (rawHtml) {
+      // Remove common Beehiiv wrapper elements
+      cleanedContent = rawHtml
+        .replace(/<div[^>]*class="[^"]*email-wrapper[^"]*"[^>]*>/gi, '<div>')
+        .replace(/<div[^>]*class="[^"]*rendered-post[^"]*"[^>]*>/gi, '<div>')
+        .replace(/<header[^>]*>[\s\S]*?<\/header>/gi, '')
+        .replace(/<div[^>]*class="[^"]*post-header[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+    }
+
+    // Estimate read time
+    function estimateReadTime(content: string): string {
+      if (!content) return '1 min read';
+      
+      const textContent = content
+        .replace(/<[^>]*>/g, '')
+        .replace(/&[^;]+;/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      
+      const wordsPerMinute = 200;
+      const words = textContent.split(/\s+/).filter(word => word.length > 0).length;
+      const minutes = Math.max(1, Math.ceil(words / wordsPerMinute));
+      
+      return `${minutes} min read`;
+    }
+
+    return {
+      id: fullPost.id,
+      title: fullPost.title,
+      subtitle: fullPost.subtitle || '',
+      content: cleanedContent,
+      readTime: estimateReadTime(cleanedContent),
+      tags: fullPost.content_tags || [],
+      slug: fullPost.slug,
+      publishedAt: fullPost.published_at?.toString() || fullPost.created?.toString() || '',
+      thumbnailUrl: fullPost.thumbnail_url,
+      webUrl: fullPost.web_url,
+    };
   } catch (error) {
     console.error('Error fetching post:', error);
     return null;
