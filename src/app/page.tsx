@@ -91,7 +91,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-4"
+            className="mb-8"
           >
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
@@ -118,7 +118,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-lg p-8 shadow-sm max-w-xl mx-auto mb-12"
+            className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto mb-8"
             style={{border: `1px solid #DFDFDF`}}
           >
             <h2 className="text-2xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
@@ -135,7 +135,7 @@ export default function Home() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-5 py-4 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent text-base"
+                className="w-full px-4 py-3 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent text-base"
                 style={{borderColor: '#DFDFDF', color: '#1F1F1F'}}
                 onFocus={(e) => e.target.style.borderColor = '#747C5DFF'}
                 onBlur={(e) => e.target.style.borderColor = '#DFDFDF'}
@@ -145,7 +145,7 @@ export default function Home() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isLoading}
-                className="w-full text-white font-normal py-4 px-6 rounded-lg transition-all duration-200 shadow-sm disabled:opacity-50 text-base"
+                className="w-full text-white font-normal py-3 px-6 rounded-lg transition-all duration-200 shadow-sm disabled:opacity-50 text-base"
                 style={{backgroundColor: '#747C5DFF'}}
               >
                 {isLoading ? 'Subscribing...' : 'Subscribe'}
@@ -163,7 +163,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center space-x-8 mb-16"
+            className="flex justify-center space-x-6 mb-8"
           >
             {socialLinks.map((link) => (
               <motion.a
@@ -173,12 +173,12 @@ export default function Home() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-4 bg-white rounded-full shadow-sm transition-colors"
+                className="p-3 bg-white rounded-full shadow-sm transition-colors"
                 style={{border: `1px solid #DFDFDF`, color: '#5A5856'}}
                 onMouseEnter={(e) => e.currentTarget.style.color = '#747C5DFF'}
                 onMouseLeave={(e) => e.currentTarget.style.color = '#5A5856'}
               >
-                <link.icon size={28} />
+                <link.icon size={24} />
               </motion.a>
             ))}
           </motion.div>
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Featured Posts */}
-      <section className="py-6 px-6">
+      <section className="pb-6 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
