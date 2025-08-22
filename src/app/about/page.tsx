@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { X, Linkedin, Instagram, Youtube } from 'lucide-react'
 import { useState } from 'react'
 
@@ -122,7 +121,7 @@ export default function About() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email..."
                 className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white text-sm"
-                style={{borderColor: '#DFDFDF', focusRingColor: '#747C5DFF'}}
+                style={{borderColor: '#DFDFDF'}}
                 required
               />
               <button
