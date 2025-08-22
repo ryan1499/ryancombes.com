@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { X, Linkedin, Instagram, Youtube } from 'lucide-react'
+import { useState } from 'react'
 
 const socialLinks = [
   { href: 'https://x.com/ryan_combes', icon: X, label: 'X' },
@@ -12,6 +13,39 @@ const socialLinks = [
 ]
 
 export default function About() {
+  const [email, setEmail] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setMessage('')
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setMessage('Successfully subscribed! Check your email for confirmation.')
+        setEmail('')
+      } else {
+        setMessage(data.error || 'Failed to subscribe. Please try again.')
+      }
+    } catch {
+      setMessage('Failed to subscribe. Please try again.')
+    }
+
+    setIsLoading(false)
+  }
+
   return (
     <div className="min-h-screen" style={{backgroundColor: '#FAF8F2'}}>
 
@@ -80,13 +114,34 @@ export default function About() {
             <p className="mb-6" style={{color: '#5A5856'}}>
               Weekly letters on fear, courage, and meaning delivered to your inbox.
             </p>
-            <Link 
-              href="/"
-              className="inline-block px-6 py-3 rounded-lg text-white font-normal transition-colors"
-              style={{backgroundColor: '#747C5DFF'}}
-            >
-              Subscribe to Brave Enough
-            </Link>
+            
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email..."
+                className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white text-sm"
+                style={{borderColor: '#DFDFDF', focusRingColor: '#747C5DFF'}}
+                required
+              />
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="px-6 py-2 rounded-lg text-white font-normal transition-colors text-sm disabled:opacity-50"
+                style={{backgroundColor: '#747C5DFF'}}
+              >
+                {isLoading ? 'Subscribing...' : 'Subscribe'}
+              </button>
+            </form>
+
+            {message && (
+              <div className="mt-3">
+                <p className="text-xs" style={{color: message.includes('Successfully') ? '#747C5DFF' : '#dc2626'}}>
+                  {message}
+                </p>
+              </div>
+            )}
           </motion.div>
 
           {/* Social Links */}
