@@ -96,7 +96,7 @@ export default function Home() {
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
                 src="/profile.png"
-                alt="Ryan Combes"
+                alt="Ryan Combes - Author of Brave Enough Newsletter, Personal Development Coach"
                 fill
                 className="rounded-full object-cover shadow-lg"
                 priority
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
-              Hey — I&apos;m Ryan
+              Hey — I&apos;m Ryan Combes
             </h1>
             
             <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal" style={{color: '#5A5856'}}>
@@ -240,7 +240,7 @@ export default function Home() {
                       <div className="relative w-6 h-6 mr-2">
                         <Image
                           src="/profile.png"
-                          alt="Ryan Combes"
+                          alt="Ryan Combes - Personal Development Author"
                           fill
                           className="rounded-full object-cover"
                         />
