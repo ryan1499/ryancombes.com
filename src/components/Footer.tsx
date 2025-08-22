@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
+import { X, Linkedin, Instagram, Youtube } from 'lucide-react'
 
 const socialLinks = [
-  { href: 'https://x.com/ryan_combes', icon: Twitter, label: 'X' },
+  { href: 'https://x.com/ryan_combes', icon: X, label: 'X' },
   { href: 'https://www.linkedin.com/in/ryan-combes-a895b347', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://www.instagram.com/ryan_combes/', icon: Instagram, label: 'Instagram' },
   { href: 'https://www.youtube.com/@RyanCombes99', icon: Youtube, label: 'YouTube' }

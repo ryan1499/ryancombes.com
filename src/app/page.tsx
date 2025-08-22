@@ -1,13 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
+import { X, Linkedin, Instagram, Youtube } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 const socialLinks = [
-  { href: 'https://x.com/ryan_combes', icon: Twitter, label: 'X' },
+  { href: 'https://x.com/ryan_combes', icon: X, label: 'X' },
   { href: 'https://www.linkedin.com/in/ryan-combes-a895b347', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://www.instagram.com/ryan_combes/', icon: Instagram, label: 'Instagram' },
   { href: 'https://www.youtube.com/@RyanCombes99', icon: Youtube, label: 'YouTube' }
@@ -84,8 +84,27 @@ export default function Home() {
   };
   return (
     <div className="min-h-screen" style={{backgroundColor: '#FAF8F2'}}>
+      {/* Minimal corner navigation */}
+      <nav className="absolute top-6 right-6 z-10 flex items-center space-x-4 text-sm">
+        <Link 
+          href="/archive"
+          className="hover:opacity-70 transition-opacity"
+          style={{color: '#5A5856'}}
+        >
+          Archive
+        </Link>
+        <span style={{color: '#DFDFDF'}}>•</span>
+        <Link 
+          href="/about"
+          className="hover:opacity-70 transition-opacity"
+          style={{color: '#5A5856'}}
+        >
+          About
+        </Link>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-8 px-6">
+      <section className="relative overflow-hidden py-16 md:py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

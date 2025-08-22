@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Karla } from 'next/font/google';
 import "./globals.css";
-import Navbar from '../components/Navbar';
+import ConditionalNavbar from '../components/ConditionalNavbar';
 import ConditionalFooter from '../components/ConditionalFooter';
 
 const playfair = Playfair_Display({
@@ -81,7 +81,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${karla.variable} font-karla antialiased`}
         style={{backgroundColor: '#FAF8F2'}}
       >
-        <Navbar />
+        <ConditionalNavbar />
         {children}
         <ConditionalFooter />
       </body>
