@@ -19,6 +19,11 @@ const karla = Karla({
 export const metadata: Metadata = {
   title: "Ryan Combes - Brave Enough Newsletter",
   description: "Weekly insights on fear, courage, and meaning. Join thousands exploring what it means to live brave enough.",
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
 };
 
 export default function RootLayout({
