@@ -19,11 +19,25 @@ type Post = {
 
 export default function Archive() {
   const [posts, setPosts] = useState<Post[]>([]);
+  const [filteredPosts, setFilteredPosts] = useState<Post[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchPosts();
   }, []);
+
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setFilteredPosts(posts);
+    } else {
+      const filtered = posts.filter(post =>
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.subtitle.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setFilteredPosts(filtered);
+    }
+  }, [searchQuery, posts]);
 
   const fetchPosts = async () => {
     try {
@@ -34,6 +48,7 @@ export default function Archive() {
         parseInt(b.publishedAt) - parseInt(a.publishedAt)
       );
       setPosts(sortedPosts);
+      setFilteredPosts(sortedPosts);
     } catch (error) {
       console.error('Error fetching posts:', error);
     } finally {
@@ -75,14 +90,35 @@ export default function Archive() {
           <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
             All Posts
           </h1>
-          <p className="text-lg" style={{color: '#5A5856'}}>
+          <p className="text-lg mb-6" style={{color: '#5A5856'}}>
             {posts.length} letters on fear, courage, and meaning
           </p>
+          
+          {/* Search Input */}
+          <div className="max-w-md mx-auto mb-8">
+            <input
+              type="text"
+              placeholder="Search posts..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent"
+              style={{borderColor: '#DFDFDF', color: '#1F1F1F'}}
+              onFocus={(e) => e.target.style.borderColor = '#747C5DFF'}
+              onBlur={(e) => e.target.style.borderColor = '#DFDFDF'}
+            />
+          </div>
+          
+          {searchQuery && (
+            <p className="text-center text-sm mb-4" style={{color: '#5A5856'}}>
+              {filteredPosts.length} post{filteredPosts.length !== 1 ? 's' : ''} found
+            </p>
+          )}
         </motion.div>
 
         {/* Posts Grid */}
         <div className="space-y-8">
-          {posts.map((post, index) => (
+          {filteredPosts.length > 0 ? (
+            filteredPosts.map((post, index) => (
             <motion.article
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
@@ -136,7 +172,23 @@ export default function Archive() {
                 </div>
               </Link>
             </motion.article>
-          ))}
+          ))
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-lg" style={{color: '#5A5856'}}>
+                {searchQuery ? 'No posts found matching your search.' : 'No posts available.'}
+              </p>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="mt-4 px-4 py-2 text-sm rounded-lg border transition-colors hover:bg-stone-50"
+                  style={{borderColor: '#DFDFDF', color: '#5A5856'}}
+                >
+                  Clear search
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </main>
     </div>

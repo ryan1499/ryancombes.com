@@ -156,6 +156,8 @@ export default function PostPage({ params }: { params: Promise<{ slug: string }>
               </h2>
             )}
 
+            {/* Subtle divider */}
+            <div className="mt-8 mb-12 w-24 h-px mx-auto" style={{backgroundColor: '#DFDFDF'}}></div>
 
           </header>
 

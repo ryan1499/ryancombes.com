@@ -30,7 +30,7 @@ export default function Navbar() {
             </div>
           </Link>
           
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             <Link 
               href="/archive"
               className={`text-sm hover:opacity-80 transition-opacity ${

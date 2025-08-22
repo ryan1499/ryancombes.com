@@ -3,6 +3,14 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
+
+const socialLinks = [
+  { href: 'https://x.com/ryan_combes', icon: Twitter, label: 'X' },
+  { href: 'https://www.linkedin.com/in/ryan-combes-a895b347', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://www.instagram.com/ryan_combes/', icon: Instagram, label: 'Instagram' },
+  { href: 'https://www.youtube.com/@RyanCombes99', icon: Youtube, label: 'YouTube' }
+]
 
 export default function About() {
   return (
@@ -16,7 +24,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-8 leading-tight" style={{color: '#1F1F1F'}}>
-            About Ryan
+            About Me
           </h1>
 
           <div className="prose prose-lg max-w-none">
@@ -28,7 +36,8 @@ export default function About() {
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                My newsletter, <strong>Brave Enough</strong>, is a public journal where I explore fear, courage, and meaning. Each week, I share letters on the journey from survivalist chaos to self-authored freedom, searching for universal truths in unique experiences so that we all might grow a little more whole, together.
+                My newsletter, <strong>Brave Enough</strong>, is a public journal where I explore fear, courage, and meaning.<br/>
+                Each week, I share letters on the journey from survivalist chaos to self-authored freedom, searching for universal truths in unique experiences so that we all might grow a little more whole, together.
               </p>
             </div>
 
@@ -40,7 +49,8 @@ export default function About() {
 
             <div style={{marginBottom: '48px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                <em>How many times have I chosen harmony over honesty? And what would it cost to never choose it again?</em>
+                <em>How many times have I chosen harmony over honesty?<br/>
+                And what would it cost to never choose it again?</em>
               </p>
             </div>
 
@@ -82,42 +92,20 @@ export default function About() {
 
           {/* Social Links */}
           <div className="mt-8 flex justify-center space-x-6">
-            <a 
-              href="https://x.com/ryan_combes" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm hover:opacity-80 transition-opacity"
-              style={{color: '#5A5856'}}
-            >
-              Twitter
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/ryan-combes-a895b347" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm hover:opacity-80 transition-opacity"
-              style={{color: '#5A5856'}}
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://www.instagram.com/ryan_combes/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm hover:opacity-80 transition-opacity"
-              style={{color: '#5A5856'}}
-            >
-              Instagram
-            </a>
-            <a 
-              href="https://www.youtube.com/@RyanCombes99" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm hover:opacity-80 transition-opacity"
-              style={{color: '#5A5856'}}
-            >
-              YouTube
-            </a>
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
+                style={{border: `1px solid #DFDFDF`, color: '#5A5856'}}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#747C5DFF'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#5A5856'}
+              >
+                <link.icon size={20} />
+              </a>
+            ))}
           </div>
         </motion.div>
       </main>

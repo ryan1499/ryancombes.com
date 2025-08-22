@@ -273,62 +273,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t py-12 px-6" style={{backgroundColor: '#FAF8F2', borderColor: '#DFDFDF'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* Brand Statement */}
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-lg font-playfair font-semibold mb-1" style={{color: '#1F1F1F'}}>
-                Ryan Combes
-              </h3>
-              <p className="text-sm" style={{color: '#5A5856'}}>
-                Intimate writing on fear, courage, and meaning.
-              </p>
-            </div>
-
-            {/* Right Side - Email Signup and Social */}
-            <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-              {/* Email Signup */}
-              <form onSubmit={handleSubscribe} className="flex">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email..."
-                  className="px-4 py-2 border border-r-0 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white"
-                  style={{borderColor: '#DFDFDF', focusRingColor: '#747C5DFF'}}
-                  required
-                />
-                <button
-                  type="submit"
-                  disabled={isLoading}
-                  className="px-4 py-2 border border-l-0 rounded-r-lg hover:bg-stone-50 transition-colors"
-                  style={{borderColor: '#DFDFDF', color: '#5A5856'}}
-                >
-                  <span className="text-lg">→</span>
-                </button>
-              </form>
-
-              {/* Social Icons */}
-              <div className="flex space-x-4">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-70 transition-opacity"
-                    style={{color: '#5A5856'}}
-                  >
-                    <link.icon size={20} />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
