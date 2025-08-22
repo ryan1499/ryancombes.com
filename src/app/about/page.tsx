@@ -62,39 +62,31 @@ export default function About() {
           <div className="prose prose-lg max-w-none">
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                I grew up on the Big Island of Hawaiʻi and now live in New York with my wife. I write letters to make sense of my experiences — sometimes from clarity, more often from questions.
+                I grew up on the Big Island of Hawaiʻi in a survivalist home. Prepping, fear, and worst-case scenarios were the air I breathed as a kid. That shaped me in deep ways — I learned resilience, but I also carried a lot of fear.
               </p>
             </div>
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                My newsletter, <strong>Brave Enough</strong>, is a public journal where I explore fear, courage, and meaning.<br/>
-                Each week, I share letters on the journey from survivalist chaos to self-authored freedom, searching for universal truths in unique experiences so that we all might grow a little more whole, together.
+                As I got older, I realized survival wasn&apos;t enough. I wanted to live with courage, not just stay safe. Writing became the way I worked that out — turning fear into words, questions into meaning.
               </p>
             </div>
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                When I&apos;m not writing, I work in growth marketing, helping companies connect with their audiences in meaningful ways.
-              </p>
-            </div>
-
-            <div style={{marginBottom: '48px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                <em>How many times have I chosen harmony over honesty?<br/>
-                And what would it cost to never choose it again?</em>
+                That&apos;s why I started Brave Enough. It&apos;s my weekly letter about fear, courage, and finding freedom from the scripts we inherit. I don&apos;t write as someone with all the answers. I write because I&apos;m wrestling too — and I&apos;ve found that sharing the questions helps us all feel a little less alone.
               </p>
             </div>
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                This question drives much of my writing — the tension between safety and truth, between fitting in and standing out, between the life we&apos;re expected to live and the one we&apos;re called to create.
+                If you&apos;ve ever felt the pull between safety and truth, between the life expected of you and the one you actually want — you&apos;ll feel at home here.
               </p>
             </div>
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                If you&apos;re interested in exploring these themes of philosophy, mindfulness, and spirituality together, I&apos;d love to have you join me on this journey.
+                Now I live in New York with my wife, still asking the same questions, still learning how to be brave enough.
               </p>
             </div>
           </div>
