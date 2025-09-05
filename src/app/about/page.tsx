@@ -59,36 +59,24 @@ export default function About() {
             About Me
           </h1>
 
-          <div className="prose prose-lg max-w-none">
-            <div style={{marginBottom: '24px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                I grew up on the Big Island of Hawaiʻi in a survivalist home. Prepping, fear, and worst-case scenarios were the air I breathed as a kid. That shaped me in deep ways — I learned resilience, but I also carried a lot of fear.
-              </p>
-            </div>
+          <div className="prose prose-lg max-w-none space-y-3" style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7'}}>
+            <p>I grew up in fear.</p>
 
-            <div style={{marginBottom: '24px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                As I got older, I realized survival wasn&apos;t enough. I wanted to live with courage, not just stay safe. Writing became the way I worked that out — turning fear into words, questions into meaning.
-              </p>
-            </div>
+            <p>My childhood was shaped by paranoia. We moved endlessly to escape the inevitable apocalypse, always believing the end was just around the corner. Fear was the air I breathed.</p>
 
-            <div style={{marginBottom: '24px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                That&apos;s why I started Brave Enough. It&apos;s my weekly letter about fear, courage, and finding freedom from the scripts we inherit. I don&apos;t write as someone with all the answers. I write because I&apos;m wrestling too — and I&apos;ve found that sharing the questions helps us all feel a little less alone.
-              </p>
-            </div>
+            <p>In my twenties, I thought I&apos;d escaped it. I went to college, built an online business, and traveled the world — free from the constraints of the system.</p>
 
-            <div style={{marginBottom: '24px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                If you&apos;ve ever felt the pull between safety and truth, between the life expected of you and the one you actually want — you&apos;ll feel at home here.
-              </p>
-            </div>
+            <p>But fear followed me.</p>
 
-            <div style={{marginBottom: '24px'}}>
-              <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                I&apos;d love for you to join me — one letter at a time, as we learn to be brave enough.
-              </p>
-            </div>
+            <p>Not in stockpiled food or escape plans, but in subtler ways: in my relationships, in my obsession with achievement, in what I believed the world held for me.</p>
+
+            <p>I thought freedom meant escape. What I&apos;ve learned is that real freedom requires courage — the courage to love, to commit, to live with meaning even when it feels risky.</p>
+
+            <p>That&apos;s what I write about now.</p>
+
+            <p>Each week I share letters on fear, freedom, and courage — not as a guru with all the answers, but as a fellow traveler still learning. My hope is simple: that my story helps you name your own, and find the courage to live more freely, too.</p>
+
+            <p>If you've felt this too, you're not alone — let's keep going together.</p>
           </div>
 
           {/* Newsletter Signup */}
