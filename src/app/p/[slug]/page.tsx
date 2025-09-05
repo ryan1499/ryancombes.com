@@ -48,6 +48,15 @@ async function getPost(slug: string): Promise<Post | null> {
       return null;
     }
 
+    // Check if post is published (publish_date is in the past)
+    if (post.publish_date) {
+      const publishDate = new Date(post.publish_date);
+      const now = new Date();
+      if (publishDate > now) {
+        return null; // Post is scheduled for future, don't show it
+      }
+    }
+
     // Get the full post content
     const postResponse = await fetch(
       `https://api.beehiiv.com/v2/publications/pub_d7682eb0-5603-434c-8b88-35690c42c08a/posts/${post.id}?expand=free_web_content`,

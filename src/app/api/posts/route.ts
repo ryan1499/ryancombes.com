@@ -46,8 +46,14 @@ export async function GET() {
 
     const data = await response.json();
     
-    // Transform the data to match our frontend needs
-    const posts = data.data?.map((post: BeehiivPost) => {
+    // Transform and filter the data to match our frontend needs
+    const posts = data.data?.filter((post: BeehiivPost) => {
+      // Only include posts that have been published (publish_date is in the past)
+      if (!post.publish_date) return false;
+      const publishDate = new Date(post.publish_date);
+      const now = new Date();
+      return publishDate <= now;
+    }).map((post: BeehiivPost) => {
       // Extract HTML content if available
       const htmlContent = post.content?.free?.web || post.free_web_content || post.content_html || '';
       
