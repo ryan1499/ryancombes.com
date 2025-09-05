@@ -76,7 +76,7 @@ export default function About() {
 
             <p>Each week I share letters on fear, freedom, and courage — not as a guru with all the answers, but as a fellow traveler still learning. My hope is simple: that my story helps you name your own, and find the courage to live more freely, too.</p>
 
-            <p>If you've felt this too, you're not alone — let's keep going together.</p>
+            <p>If you&apos;ve felt this too, you&apos;re not alone — let&apos;s keep going together.</p>
           </div>
 
           {/* Newsletter Signup */}
