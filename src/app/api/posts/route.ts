@@ -50,7 +50,7 @@ export async function GET() {
     const posts = data.data?.filter((post: BeehiivPost) => {
       // Only include posts that have been published (publish_date is in the past)
       if (!post.publish_date) return false;
-      const publishDate = new Date(post.publish_date);
+      const publishDate = new Date(post.publish_date * 1000); // Convert Unix timestamp (seconds) to milliseconds
       const now = new Date();
       return publishDate <= now;
     }).map((post: BeehiivPost) => {

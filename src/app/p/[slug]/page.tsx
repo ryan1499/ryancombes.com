@@ -50,7 +50,7 @@ async function getPost(slug: string): Promise<Post | null> {
 
     // Check if post is published (publish_date is in the past)
     if (post.publish_date) {
-      const publishDate = new Date(post.publish_date);
+      const publishDate = new Date(post.publish_date * 1000); // Convert Unix timestamp (seconds) to milliseconds
       const now = new Date();
       if (publishDate > now) {
         return null; // Post is scheduled for future, don't show it
