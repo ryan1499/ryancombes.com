@@ -86,7 +86,7 @@ export default function About() {
 
             <div style={{marginBottom: '24px'}}>
               <p style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7', marginBottom: '0'}}>
-                Now I live in New York with my wife, still asking the same questions, still learning how to be brave enough.
+                I&apos;d love for you to join me — one letter at a time, as we learn to be brave enough.
               </p>
             </div>
           </div>
