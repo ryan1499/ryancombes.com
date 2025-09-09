@@ -56,4 +56,39 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - Uses Tailwind CSS with custom color variables
 - Consistent spacing and typography scale
 - Responsive design with mobile-first approach
-- Framer Motion for smooth page transitions and hover effects
+- Framer Motion for smooth page transitions and hover animations
+
+## Performance Optimizations
+
+### Font Loading
+- Google Fonts (Playfair Display, Karla) configured with `preload: true`, `display: swap`, and fallbacks
+- Resource hints added for fonts.googleapis.com and fonts.gstatic.com
+
+### Image Optimization
+- Next.js Image component used throughout with proper sizing attributes
+- Lazy loading for below-the-fold images
+- Modern formats (WebP/AVIF) enabled in next.config.ts
+- Blur placeholders for better perceived performance
+
+### JavaScript Bundle
+- Package imports optimized for lucide-react and framer-motion
+- Console logging removed in production builds
+- API caching configured with 5-minute revalidation
+
+### Content Processing
+- Uses cheerio for HTML parsing instead of aggressive regex replacements
+- Consistent content processing between API routes and server-side rendering
+- Preserves article content while removing Beehiiv wrapper elements
+
+## Troubleshooting
+
+### Content Truncation Issues
+- If Beehiiv content appears cut off, check the content processing logic in `src/app/p/[slug]/page.tsx`
+- Ensure cheerio-based parsing is maintained over regex replacements
+- Content processing should preserve legitimate text while removing only styling/wrapper elements
+
+### Performance Issues
+- Run Lighthouse audits to identify bottlenecks
+- Check that image optimization settings are properly configured
+- Verify font preloading and resource hints are working
+- Monitor bundle sizes in build output
