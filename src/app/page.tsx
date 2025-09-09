@@ -117,6 +117,7 @@ export default function Home() {
                 src="/profile.png"
                 alt="Ryan Combes - Author of Brave Enough Newsletter, Personal Development Coach"
                 fill
+                sizes="96px"
                 className="rounded-full object-cover shadow-lg"
                 priority
               />
@@ -238,7 +239,11 @@ export default function Home() {
                         src={post.thumbnailUrl}
                         alt={post.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSd1E2VEiCQQKBgkNpOqt2urFd+Uo1b/2Q=="
                       />
                     </div>
                   )}
@@ -264,7 +269,9 @@ export default function Home() {
                           src="/profile.png"
                           alt="Ryan Combes - Personal Development Author"
                           fill
+                          sizes="24px"
                           className="rounded-full object-cover"
+                          loading="lazy"
                         />
                       </div>
                       <span className="text-sm font-medium" style={{color: '#1F1F1F'}}>

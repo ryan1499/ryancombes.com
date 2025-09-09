@@ -8,12 +8,16 @@ const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap',
+  preload: true,
+  fallback: ['serif'],
 });
 
 const karla = Karla({
   subsets: ['latin'],
   variable: '--font-karla',
   display: 'swap',
+  preload: true,
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
 });
 
 export const metadata: Metadata = {
@@ -77,6 +81,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://api.beehiiv.com" />
+        <link rel="preload" href="/profile.png" as="image" type="image/png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body
         className={`${playfair.variable} ${karla.variable} font-karla antialiased`}
         style={{backgroundColor: '#FAF8F2'}}

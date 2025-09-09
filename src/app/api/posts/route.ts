@@ -35,6 +35,10 @@ export async function GET() {
           'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
+        next: { 
+          revalidate: 300, // 5 minutes cache
+          tags: ['posts']
+        }
       }
     );
 
