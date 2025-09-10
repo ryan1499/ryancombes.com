@@ -30,6 +30,7 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
+  const [postsLoading, setPostsLoading] = useState(true);
 
   useEffect(() => {
     fetchPosts();
@@ -51,6 +52,8 @@ export default function Home() {
     } catch (error) {
       console.error('Error fetching posts:', error);
       setPosts([]);
+    } finally {
+      setPostsLoading(false);
     }
   };
 
@@ -214,8 +217,28 @@ Now I write about the courage it takes to live free, grounded, and whole.
           </motion.h2>
           
           <div className="grid md:grid-cols-3 gap-6">
-            {posts.map((post, index) => (
-              <Link key={post.id} href={`/p/${post.slug}`}>
+            {postsLoading ? (
+              // Loading skeleton
+              Array(3).fill(0).map((_, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm border border-brand">
+                  <div className="relative w-full h-48 bg-gray-200 animate-pulse"></div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="h-4 bg-gray-200 rounded animate-pulse w-20"></div>
+                      <div className="h-4 bg-gray-200 rounded animate-pulse w-16"></div>
+                    </div>
+                    <div className="h-6 bg-gray-200 rounded animate-pulse mb-3 w-3/4"></div>
+                    <div className="h-4 bg-gray-200 rounded animate-pulse mb-2 w-full"></div>
+                    <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3"></div>
+                    <div className="flex items-center mt-4 pt-4 border-t border-brand">
+                      <div className="w-6 h-6 bg-gray-200 rounded-full animate-pulse mr-2"></div>
+                      <div className="h-4 bg-gray-200 rounded animate-pulse w-20"></div>
+                    </div>
+                  </div>
+                </div>
+              ))
+            ) : posts.map((post, index) => (
+              <Link key={post.id} href={`/p/${post.slug}`} prefetch={true}>
                 <motion.article
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

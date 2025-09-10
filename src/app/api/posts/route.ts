@@ -29,14 +29,14 @@ export async function GET() {
     }
 
     const response = await fetch(
-      `https://api.beehiiv.com/v2/publications/${publicationId}/posts?status=confirmed&limit=100&expand=free_web_content`,
+      `https://api.beehiiv.com/v2/publications/${publicationId}/posts?status=confirmed&limit=100`,
       {
         headers: {
           'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
         next: { 
-          revalidate: 300, // 5 minutes cache
+          revalidate: 900, // 15 minutes cache for list data
           tags: ['posts']
         }
       }
@@ -58,21 +58,17 @@ export async function GET() {
       const now = new Date();
       return publishDate <= now;
     }).map((post: BeehiivPost) => {
-      // Extract HTML content if available
-      const htmlContent = post.content?.free?.web || post.free_web_content || post.content_html || '';
-      
       return {
         id: post.id,
         title: post.title,
         subtitle: post.subtitle || '',
-        content: htmlContent,
         excerpt: post.excerpt,
         publishedAt: post.publish_date,
         slug: post.slug,
         thumbnailUrl: post.thumbnail_url,
         webUrl: post.web_url,
-        tags: post.content_tags || [],
-        readTime: estimateReadTime(htmlContent || post.title),
+        tags: post.content_tags ? post.content_tags.slice(0, 3) : [],
+        readTime: estimateReadTime(post.subtitle || post.title), // Estimate from subtitle/title for speed
       };
     }) || [];
 

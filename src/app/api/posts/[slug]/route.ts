@@ -25,6 +25,10 @@ export async function GET(
           'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
+        next: { 
+          revalidate: 3600, // 1 hour cache for post lookups
+          tags: ['post-lookup']
+        }
       }
     );
 
@@ -52,6 +56,10 @@ export async function GET(
           'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
+        next: { 
+          revalidate: 7200, // 2 hours cache for individual posts (content doesn't change often)
+          tags: [`post-${post.id}`]
+        }
       }
     );
 

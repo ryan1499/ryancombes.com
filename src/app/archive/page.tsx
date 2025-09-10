@@ -127,7 +127,7 @@ export default function Archive() {
               className="bg-white rounded-lg border shadow-sm hover:shadow-md transition-all duration-300"
               style={{borderColor: '#DFDFDF'}}
             >
-              <Link href={`/p/${post.slug}`} className="block">
+              <Link href={`/p/${post.slug}`} className="block" prefetch={true}>
                 <div className="flex flex-col md:flex-row">
                   {/* Thumbnail */}
                   {post.thumbnailUrl && (
