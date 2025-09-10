@@ -6,9 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Development
 - `npm run dev` - Start development server with Turbopack
-- `npm run build` - Build production application with Turbopack
+- `npm run build` - Build production application with Turbopack (includes automatic lint check)
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
+- `npm run lint:fix` - Run ESLint with automatic fixes
 
 ### Environment Variables Required
 - `BEEHIIV_API_KEY` - API key for Beehiiv newsletter service
@@ -118,3 +119,9 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - Check meta descriptions are under 160 characters
 - Verify canonical URLs are properly set
 - Test image optimization with WebP/AVIF serving
+
+### Code Quality & Deployment
+- **Automatic Linting**: Build process includes prebuild lint check to prevent deployment failures
+- **ESLint Rules**: Enforces React/Next.js best practices including escaped entities
+- **Common Fixes**: Use `npm run lint:fix` for automatic corrections
+- **Deployment Prevention**: Lint errors will block Vercel deployments via prebuild script

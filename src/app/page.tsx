@@ -129,7 +129,7 @@ export default function Home() {
 	I grew up in fear, waiting for the world to fall apart. 
             </p>
 	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
-Now I write about what it takes to live with courage — and discover the freedom and meaning on the other side.
+Now I write about the courage to live free, grounded, and whole.
 </p>
           </motion.div>
 
