@@ -122,7 +122,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-6 text-brand-dark">
-              Hey — I'm Ryan Combes
+              Hey — I&apos;m Ryan Combes
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
