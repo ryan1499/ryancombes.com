@@ -17,6 +17,19 @@ interface BeehiivPost {
   content_html?: string;
 };
 
+interface TransformedPost {
+  id: string;
+  title: string;
+  subtitle: string;
+  excerpt?: string;
+  publishedAt: string;
+  slug: string;
+  thumbnailUrl?: string;
+  webUrl: string;
+  tags: string[];
+  readTime: string;
+}
+
 export async function GET() {
   try {
     const apiKey = process.env.BEEHIIV_API_KEY;
@@ -56,19 +69,19 @@ export async function GET() {
     const featuredSlugs = ['living-in-truth', 'achievement-isnt-enough', 'living-past-fear'];
     
     // Transform and filter the data to match our frontend needs
-    const allPosts = data.data?.filter((post: BeehiivPost) => {
+    const allPosts: TransformedPost[] = data.data?.filter((post: BeehiivPost) => {
       // Only include posts that have been published (publish_date is in the past)
       if (!post.publish_date || typeof post.publish_date !== 'number') return false;
       const publishDate = new Date(post.publish_date * 1000); // Convert Unix timestamp (seconds) to milliseconds
       const now = new Date();
       return publishDate <= now;
-    }).map((post: BeehiivPost) => {
+    }).map((post: BeehiivPost): TransformedPost => {
       return {
         id: post.id,
         title: post.title,
         subtitle: post.subtitle || '',
         excerpt: post.excerpt,
-        publishedAt: post.publish_date,
+        publishedAt: post.publish_date!.toString(),
         slug: post.slug,
         thumbnailUrl: post.thumbnail_url,
         webUrl: post.web_url,
@@ -79,8 +92,8 @@ export async function GET() {
 
     // Return ONLY the featured posts in the specified order
     const posts = featuredSlugs.map(slug => 
-      allPosts.find(post => post.slug === slug)
-    ).filter(Boolean);
+      allPosts.find((post: TransformedPost) => post.slug === slug)
+    ).filter((post): post is TransformedPost => Boolean(post));
 
     return NextResponse.json({ posts });
   } catch (error) {
