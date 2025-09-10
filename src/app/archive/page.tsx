@@ -41,7 +41,7 @@ export default function Archive() {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('/api/posts');
+      const response = await fetch('/api/posts/all');
       const data = await response.json();
       // Sort posts by publishedAt timestamp in descending order (newest first)
       const sortedPosts = (data.posts || []).sort((a: Post, b: Post) => 

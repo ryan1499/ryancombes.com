@@ -125,7 +125,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-6 text-brand-dark">
-              Hey — I&apos;m Ryan Combes
+              Hey — I&apos;m Ryan
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
@@ -147,7 +147,7 @@ Now I write about the courage it takes to live free, grounded, and whole.
               Brave Enough Newsletter
             </h2>
             <p className="mb-6 text-base font-normal text-brand-muted">
-            These letters are part of my own chapter of becoming — an exploration of courage, integrity, and love. Each week I share honest stories and questions to help you live brave enough.
+            Weekly letters with honest stories and questions on becoming more courageous, grounded, and whole.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
@@ -248,7 +248,7 @@ Now I write about the courage it takes to live free, grounded, and whole.
                 >
                   {/* Thumbnail */}
                   {post.thumbnailUrl && (
-                    <div className="relative w-full h-48">
+                    <div className="relative w-full h-48 bg-gray-100">
                       <Image
                         src={post.thumbnailUrl}
                         alt={post.title}
@@ -258,6 +258,9 @@ Now I write about the courage it takes to live free, grounded, and whole.
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSd1E2VEiCQQKBgkNpOqt2urFd+Uo1b/2Q=="
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
                       />
                     </div>
                   )}

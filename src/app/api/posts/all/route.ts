@@ -29,7 +29,6 @@ export async function GET() {
       );
     }
 
-    // Fetch enough posts to ensure we get the featured ones (they might be older)
     const response = await fetch(
       `https://api.beehiiv.com/v2/publications/${publicationId}/posts?status=confirmed&limit=100`,
       {
@@ -38,8 +37,8 @@ export async function GET() {
           'Content-Type': 'application/json',
         },
         next: { 
-          revalidate: 900, // 15 minutes cache for list data
-          tags: ['posts']
+          revalidate: 3600, // 1 hour cache for full list (used less frequently)
+          tags: ['posts-all']
         }
       }
     );
@@ -52,11 +51,8 @@ export async function GET() {
 
     const data = await response.json();
     
-    // Featured post slugs - these are the ONLY posts we want for the homepage
-    const featuredSlugs = ['living-in-truth', 'achievement-isnt-enough', 'living-past-fear'];
-    
     // Transform and filter the data to match our frontend needs
-    const allPosts = data.data?.filter((post: BeehiivPost) => {
+    const posts = data.data?.filter((post: BeehiivPost) => {
       // Only include posts that have been published (publish_date is in the past)
       if (!post.publish_date || typeof post.publish_date !== 'number') return false;
       const publishDate = new Date(post.publish_date * 1000); // Convert Unix timestamp (seconds) to milliseconds
@@ -73,22 +69,16 @@ export async function GET() {
         thumbnailUrl: post.thumbnail_url,
         webUrl: post.web_url,
         tags: post.content_tags ? post.content_tags.slice(0, 3) : [],
-        readTime: estimateReadTime(post.subtitle || post.title), // Estimate from subtitle/title for speed
+        readTime: estimateReadTime(post.subtitle || post.title),
       };
     }) || [];
 
-    // Return ONLY the featured posts in the specified order
-    const posts = featuredSlugs.map(slug => 
-      allPosts.find(post => post.slug === slug)
-    ).filter(Boolean);
-
     return NextResponse.json({ posts });
   } catch (error) {
-    console.error('Error fetching posts:', error);
+    console.error('Error fetching all posts:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch posts' },
+      { error: 'Failed to fetch all posts' },
       { status: 500 }
     );
   }
 }
-

@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import PostClient from './PostClient'
-import * as cheerio from 'cheerio'
 
 type Post = {
   id: string;
@@ -18,183 +17,21 @@ type Post = {
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
-    // Fetch directly from Beehiiv API instead of internal API route
-    const apiKey = process.env.BEEHIIV_API_KEY;
-    if (!apiKey) {
-      console.error('Beehiiv API key not found');
-      return null;
-    }
-
-    // First get the post from the posts list
-    const postsResponse = await fetch(
-      'https://api.beehiiv.com/v2/publications/pub_d7682eb0-5603-434c-8b88-35690c42c08a/posts?limit=100&expand=free_web_content',
+    // Use our optimized API route instead of hitting Beehiiv directly
+    const response = await fetch(
+      `${process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://ryancombes.com'}/api/posts/${slug}`,
       {
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json',
-        },
         next: { revalidate: 3600 }
       }
     );
 
-    if (!postsResponse.ok) {
-      console.error(`Beehiiv API error: ${postsResponse.status}`);
+    if (!response.ok) {
+      console.error(`API error: ${response.status}`);
       return null;
     }
 
-    const postsData = await postsResponse.json();
-    const post = postsData.data?.find((p: { slug: string }) => p.slug === slug);
-
-    if (!post) {
-      return null;
-    }
-
-    // Check if post is published (publish_date is in the past)
-    if (post.publish_date && typeof post.publish_date === 'number') {
-      const publishDate = new Date(post.publish_date * 1000); // Convert Unix timestamp (seconds) to milliseconds
-      const now = new Date();
-      if (publishDate > now) {
-        return null; // Post is scheduled for future, don't show it
-      }
-    }
-
-    // Get the full post content
-    const postResponse = await fetch(
-      `https://api.beehiiv.com/v2/publications/pub_d7682eb0-5603-434c-8b88-35690c42c08a/posts/${post.id}?expand=free_web_content`,
-      {
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json',
-        },
-        next: { revalidate: 3600 }
-      }
-    );
-
-    if (!postResponse.ok) {
-      console.error(`Beehiiv post API error: ${postResponse.status}`);
-      return null;
-    }
-
-    const fullPostData = await postResponse.json();
-    const fullPost = fullPostData.data;
-
-    // Extract and clean the HTML content
-    const rawHtml = fullPost.content?.free?.web || 
-                    fullPost.free_web_content || 
-                    fullPost.content_html || 
-                    '';
-
-    // Use the same logic as the API route for consistency
-    let cleanedContent = rawHtml;
-    if (rawHtml) {
-      // Load content with cheerio
-      const $ = cheerio.load(rawHtml);
-      
-      // Remove all unwanted elements
-      $('script, style, link, meta, nav, footer, header').remove();
-      
-      // Remove Beehiiv specific elements
-      $('#web-header, .web-header, [class*="header"], [id*="header"]').remove();
-      $('.navbar, .nav-bar, [class*="nav"]').remove();
-      $('.footer, [class*="footer"]').remove();
-      
-      // Remove any title/subtitle elements that match the post data (but be more specific)
-      $('h1, h2, h3').each((i, el) => {
-        const text = $(el).text().trim();
-        // Only remove exact matches to avoid removing partial content
-        if (text === fullPost.title || text === fullPost.subtitle) {
-          $(el).remove();
-        }
-      });
-      
-      // Look for the main content area
-      let articleContent = '';
-      
-      // Try multiple selectors for content
-      const contentSelectors = [
-        '#content-blocks',
-        '.content-blocks', 
-        '.article-content',
-        '.post-content',
-        '.rendered-post .content',
-        '.email-content',
-        '[class*="content"]'
-      ];
-      
-      for (const selector of contentSelectors) {
-        const content = $(selector).html();
-        if (content && content.trim().length > 100) {
-          articleContent = content;
-          break;
-        }
-      }
-      
-      // If no specific content area found, clean the body
-      if (!articleContent) {
-        // Remove Beehiiv wrapper elements
-        $('.rendered-post, .email-wrapper, [class*="wrapper"]').each((i, el) => {
-          const $el = $(el);
-          // Unwrap the content but keep the inner HTML
-          const html = $el.html();
-          if (html) {
-            $el.replaceWith(html);
-          }
-        });
-        
-        articleContent = $('body').html() || '';
-      }
-      
-      // Final cleanup pass - preserve content but remove styling
-      if (articleContent) {
-        const $clean = cheerio.load(articleContent);
-        
-        // Clean up styling but preserve structure and content
-        $clean('div, p, h1, h2, h3, h4, h5, h6, span, strong, b, i, em, a').each((i, el) => {
-          const $el = $clean(el);
-          // Remove style and class attributes but keep the element and content
-          $el.removeAttr('style class');
-        });
-        
-        // Remove scripts and other unwanted elements
-        $clean('script, style, link, meta').remove();
-        
-        cleanedContent = $clean.html();
-      }
-      
-      cleanedContent = cleanedContent || rawHtml;
-    }
-
-    // Estimate read time
-    function estimateReadTime(content: string): string {
-      if (!content) return '1 min read';
-      
-      const textContent = content
-        .replace(/<[^>]*>/g, '')
-        .replace(/&[^;]+;/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-      
-      const wordsPerMinute = 200;
-      const words = textContent.split(/\s+/).filter(word => word.length > 0).length;
-      const minutes = Math.max(1, Math.ceil(words / wordsPerMinute));
-      
-      return `${minutes} min read`;
-    }
-
-    return {
-      id: fullPost.id,
-      title: fullPost.title,
-      subtitle: fullPost.subtitle || '',
-      content: cleanedContent,
-      readTime: estimateReadTime(cleanedContent),
-      tags: fullPost.content_tags || [],
-      slug: fullPost.slug,
-      publishedAt: (fullPost.published_at ? new Date(fullPost.published_at).getTime() : 
-                   fullPost.created ? new Date(fullPost.created).getTime() : 
-                   Date.now()).toString(),
-      thumbnailUrl: fullPost.thumbnail_url,
-      webUrl: fullPost.web_url,
-    };
+    const data = await response.json();
+    return data.post || null;
   } catch (error) {
     console.error('Error fetching post:', error);
     return null;
