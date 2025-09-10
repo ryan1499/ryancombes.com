@@ -87,18 +87,18 @@ export default function Archive() {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
-            All Posts
+          <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-4 text-brand-dark">
+            Archive
           </h1>
-          <p className="text-lg mb-6" style={{color: '#5A5856'}}>
-            {posts.length} letters on fear, courage, and meaning
+          <p className="text-lg mb-6 text-brand-muted">
+            {posts.length} letters on courage, freedom, and meaning
           </p>
           
           {/* Search Input */}
           <div className="max-w-md mx-auto mb-8">
             <input
               type="text"
-              placeholder="Search posts..."
+              placeholder="Search letters..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-4 py-3 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent"

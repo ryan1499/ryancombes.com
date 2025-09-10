@@ -296,14 +296,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   if (!post) {
     return (
-      <div className="min-h-screen flex items-center justify-center" style={{backgroundColor: '#FAF8F2'}}>
+      <div className="min-h-screen flex items-center justify-center bg-brand-cream">
         <div className="text-center">
-          <h1 className="text-2xl font-playfair mb-4" style={{color: '#1F1F1F'}}>Post Not Found</h1>
-          <p style={{color: '#5A5856'}}>The post you&apos;re looking for doesn&apos;t exist.</p>
+          <h1 className="text-2xl font-playfair mb-4 text-brand-dark">Post Not Found</h1>
+          <p className="text-brand-muted">The post you&apos;re looking for doesn&apos;t exist.</p>
           <Link 
             href="/" 
-            className="inline-block mt-4 px-6 py-2 rounded-lg text-white"
-            style={{backgroundColor: '#747C5DFF'}}
+            className="inline-block mt-4 px-6 py-2 rounded-lg text-white bg-brand-accent"
           >
             Back to Home
           </Link>
@@ -312,5 +311,47 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     );
   }
 
-  return <PostClient post={post} />;
+  const publishedDate = new Date(parseInt(post.publishedAt));
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.subtitle || generateMetaDescription(post),
+    "image": post.thumbnailUrl || "https://ryancombes.com/profile.png",
+    "author": {
+      "@type": "Person",
+      "@id": "https://ryancombes.com/#person",
+      "name": "Ryan Combes",
+      "url": "https://ryancombes.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": "https://ryancombes.com/#person",
+      "name": "Ryan Combes",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ryancombes.com/profile.png"
+      }
+    },
+    "datePublished": publishedDate.toISOString(),
+    "dateModified": publishedDate.toISOString(),
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://ryancombes.com/p/${post.slug}`
+    },
+    "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length,
+    "articleSection": "Personal Development",
+    "keywords": extractKeywords(post),
+    "inLanguage": "en-US"
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <PostClient post={post} />
+    </>
+  );
 }

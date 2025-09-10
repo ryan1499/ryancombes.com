@@ -54,7 +54,7 @@ export default function Footer() {
               Ryan Combes
             </h3>
             <p className="text-sm" style={{color: '#5A5856'}}>
-              Intimate writing on fear, courage, and meaning.
+              Intimate writing on courage, freedom, and meaning.
             </p>
           </div>
 

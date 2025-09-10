@@ -80,6 +80,26 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - Consistent content processing between API routes and server-side rendering
 - Preserves article content while removing Beehiiv wrapper elements
 
+## SEO & Technical Optimizations
+
+### SEO Features Implemented
+- **Structured Data (JSON-LD)**: Person, Website, Blog, and Article schemas for enhanced search visibility
+- **Keyword Optimization**: Strategic keyword distribution in titles, headings, and meta descriptions
+- **Page-Specific Metadata**: Dedicated metadata for all routes with targeted descriptions
+- **Semantic HTML**: Proper heading hierarchy (H1→H2→H3) and semantic elements
+- **Image Optimization**: AVIF/WebP formats prioritized with proper caching headers
+- **No Inline CSS**: All styling uses Tailwind utility classes and CSS custom properties
+
+### Brand Color System
+- CSS custom properties defined in globals.css for consistent theming
+- Brand utility classes: `.bg-brand-cream`, `.bg-brand-accent`, `.text-brand-dark`, etc.
+- Color variables: `--color-cream`, `--color-dark-text`, `--color-muted`, `--color-accent`, `--color-border`
+
+### Content Guidelines
+- Ryan Combes is referred to as a "Writer & Storyteller" or "Personal Growth Writer"
+- Brand focus: fear, courage, identity, meaning, spiritual depth, authentic freedom
+- Target audience: ambitious young adults seeking personal growth beyond achievement
+
 ## Troubleshooting
 
 ### Content Truncation Issues
@@ -92,3 +112,9 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - Check that image optimization settings are properly configured
 - Verify font preloading and resource hints are working
 - Monitor bundle sizes in build output
+
+### SEO Validation
+- Use Google's Rich Results Test to verify structured data
+- Check meta descriptions are under 160 characters
+- Verify canonical URLs are properly set
+- Test image optimization with WebP/AVIF serving

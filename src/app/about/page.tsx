@@ -55,8 +55,8 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-8 leading-tight" style={{color: '#1F1F1F'}}>
-            About Me
+          <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-8 leading-tight text-brand-dark">
+            From Fear to Freedom
           </h1>
 
           <div className="prose prose-lg max-w-none space-y-3" style={{color: '#1F1F1F', fontSize: '1.125rem', lineHeight: '1.7'}}>
@@ -74,7 +74,7 @@ export default function About() {
 
             <p>That&apos;s what I write about now.</p>
 
-            <p>Each week I share letters on fear, freedom, and courage — not as a guru with all the answers, but as a fellow traveler still learning. My hope is simple: that my story helps you name your own, and find the courage to live more freely, too.</p>
+            <p>Each week I share a short and honest letter, not as a guru with all the answers, but as a fellow traveler still learning. My hope is simple: that my story helps you name your own, and find the courage to live more freely, too.</p>
 
             <p>If you&apos;ve felt this too, you&apos;re not alone — let&apos;s keep going together.</p>
           </div>
@@ -91,7 +91,7 @@ export default function About() {
               Join the journey
             </h3>
             <p className="mb-6" style={{color: '#5A5856'}}>
-              Weekly letters on fear, courage, and meaning delivered to your inbox.
+              Weekly letters on courage, freedom, and meaning delivered to your inbox.
             </p>
             
             <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">

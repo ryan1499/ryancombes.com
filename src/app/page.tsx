@@ -83,28 +83,26 @@ export default function Home() {
     setIsLoading(false);
   };
   return (
-    <div className="min-h-screen" style={{backgroundColor: '#FAF8F2'}}>
+    <div className="min-h-screen bg-brand-cream">
       {/* Minimal corner navigation */}
       <nav className="absolute top-6 right-6 z-10 flex items-center space-x-4 text-sm">
         <Link 
           href="/archive"
-          className="hover:opacity-70 transition-opacity"
-          style={{color: '#5A5856'}}
+          className="hover:opacity-70 transition-opacity text-brand-muted"
         >
           Archive
         </Link>
-        <span style={{color: '#DFDFDF'}}>•</span>
+        <span className="text-brand-border opacity-40">•</span>
         <Link 
           href="/about"
-          className="hover:opacity-70 transition-opacity"
-          style={{color: '#5A5856'}}
+          className="hover:opacity-70 transition-opacity text-brand-muted"
         >
           About
         </Link>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 md:py-20 px-6">
+      <header className="relative overflow-hidden py-12 md:py-16 px-6" role="banner">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +113,7 @@ export default function Home() {
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
                 src="/profile.png"
-                alt="Ryan Combes - Author of Brave Enough Newsletter, Personal Development Coach"
+                alt="Ryan Combes - Author of Brave Enough Newsletter, Personal Growth Writer"
                 fill
                 sizes="96px"
                 className="rounded-full object-cover shadow-lg"
@@ -123,17 +121,16 @@ export default function Home() {
               />
             </div>
             
-            <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
-              Hey — I&apos;m Ryan Combes
+            <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-6 text-brand-dark">
+              Hey — I'm Ryan Combes
             </h1>
             
-            <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal mb-4" style={{color: '#5A5856'}}>
-              I write about overcoming fear, finding courage, and living with meaning.
+            <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
+	I grew up in fear, waiting for the world to fall apart. 
             </p>
-            <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed font-normal" style={{color: '#5A5856'}}>
-              Join me exploring what it means to live 
-              <span className="font-semibold" style={{color: '#747C5DFF'}}> brave enough</span>.
-            </p>
+	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
+Now I write about what it takes to live with courage — and discover the freedom and meaning on the other side.
+</p>
           </motion.div>
 
           {/* Newsletter Signup */}
@@ -141,16 +138,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto mb-8"
-            style={{border: `1px solid #DFDFDF`}}
+            className="bg-white rounded-lg p-6 shadow-sm max-w-lg mx-auto mb-6 border border-brand"
           >
-            <h2 className="text-2xl font-playfair font-normal mb-4" style={{color: '#1F1F1F'}}>
+            <h2 className="text-2xl font-playfair font-normal mb-4 text-brand-dark">
               Brave Enough Newsletter
             </h2>
-            <p className="mb-6 text-base font-normal" style={{color: '#5A5856'}}>
-              Weekly insights on inner work, courage, and authentic living.
+            <p className="mb-6 text-base font-normal text-brand-muted">
+              Weekly letters with honest stories and questions to help you live brave enough.
             </p>
-            
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
                 type="email"
@@ -158,18 +153,14 @@ export default function Home() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-4 py-3 rounded-lg border bg-white transition-all focus:ring-2 focus:border-transparent text-base"
-                style={{borderColor: '#DFDFDF', color: '#1F1F1F'}}
-                onFocus={(e) => e.target.style.borderColor = '#747C5DFF'}
-                onBlur={(e) => e.target.style.borderColor = '#DFDFDF'}
+                className="w-full px-4 py-3 rounded-lg border border-brand bg-white transition-all focus:ring-2 focus:border-transparent text-base text-brand-dark focus:border-brand-accent"
               />
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isLoading}
-                className="w-full text-white font-normal py-3 px-6 rounded-lg transition-all duration-200 shadow-sm disabled:opacity-50 text-base"
-                style={{backgroundColor: '#747C5DFF'}}
+                className="w-full text-white font-normal py-4 px-6 rounded-xl transition-all duration-200 shadow-sm disabled:opacity-50 text-base bg-brand-accent"
               >
                 {isLoading ? 'Subscribing...' : 'Subscribe'}
               </motion.button>
@@ -186,7 +177,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center space-x-6 mb-8"
+            className="flex justify-center space-x-6 mb-4"
           >
             {socialLinks.map((link) => (
               <motion.a
@@ -196,27 +187,28 @@ export default function Home() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 bg-white rounded-full shadow-sm transition-colors"
-                style={{border: `1px solid #DFDFDF`, color: '#5A5856'}}
-                onMouseEnter={(e) => e.currentTarget.style.color = '#747C5DFF'}
-                onMouseLeave={(e) => e.currentTarget.style.color = '#5A5856'}
+                className="p-3 bg-white rounded-full shadow-sm transition-colors border border-brand text-brand-muted hover:text-brand-accent"
               >
                 <link.icon size={24} />
               </motion.a>
             ))}
           </motion.div>
         </div>
-      </section>
+      </header>
+
+      {/* Divider */}
+      <div className="flex justify-center mb-6">
+        <div className="w-16 h-px bg-brand-border opacity-50"></div>
+      </div>
 
       {/* Featured Posts */}
-      <section className="pb-6 px-6">
+      <main className="pb-6 px-6" role="main">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-2xl md:text-3xl font-playfair font-normal text-center mb-8"
-            style={{color: '#1F1F1F'}}
+            className="text-2xl md:text-3xl font-playfair font-normal text-center mb-8 text-brand-dark"
           >
             Featured Letters
           </motion.h2>
@@ -229,8 +221,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.8 + index * 0.1 }}
                   whileHover={{ y: -2 }}
-                  className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden"
-                  style={{border: `1px solid #DFDFDF`}}
+                  className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden border border-brand"
                 >
                   {/* Thumbnail */}
                   {post.thumbnailUrl && (
@@ -250,31 +241,31 @@ export default function Home() {
                   
                   {/* Content */}
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-3 text-sm" style={{color: '#5A5856'}}>
+                    <div className="flex items-center justify-between mb-3 text-sm text-brand-muted">
                       <span>{new Date(parseInt(post.publishedAt) * 1000).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                       <span>{post.readTime}</span>
                     </div>
                     
-                    <h3 className="text-xl font-playfair font-semibold mb-3 leading-tight" style={{color: '#1F1F1F'}}>
+                    <h3 className="text-xl font-playfair font-semibold mb-3 leading-tight text-brand-dark">
                       {post.title}
                     </h3>
                     
-                    <p className="text-sm leading-relaxed" style={{color: '#5A5856'}}>
+                    <p className="text-sm leading-relaxed text-brand-muted">
                       {post.subtitle}
                     </p>
                     
-                    <div className="flex items-center mt-4 pt-4 border-t" style={{borderColor: '#DFDFDF'}}>
+                    <div className="flex items-center mt-4 pt-4 border-t border-brand">
                       <div className="relative w-6 h-6 mr-2">
                         <Image
                           src="/profile.png"
-                          alt="Ryan Combes - Personal Development Author"
+                          alt="Ryan Combes - Personal Growth Writer"
                           fill
                           sizes="24px"
                           className="rounded-full object-cover"
                           loading="lazy"
                         />
                       </div>
-                      <span className="text-sm font-medium" style={{color: '#1F1F1F'}}>
+                      <span className="text-sm font-medium text-brand-dark">
                         Ryan Combes
                       </span>
                     </div>
@@ -293,14 +284,13 @@ export default function Home() {
           >
             <Link 
               href="/archive"
-              className="inline-block px-6 py-3 rounded-lg border transition-colors hover:bg-stone-50"
-              style={{borderColor: '#DFDFDF', color: '#5A5856'}}
+              className="inline-block px-6 py-3 rounded-lg border border-brand transition-colors hover:bg-stone-50 text-brand-muted"
             >
-              View all {posts.length > 3 ? posts.length : ''} posts →
+              View all {posts.length > 3 ? posts.length : ''} letters →
             </Link>
           </motion.div>
         </div>
-      </section>
+      </main>
 
     </div>
   )
