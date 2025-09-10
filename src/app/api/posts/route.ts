@@ -65,7 +65,7 @@ export async function GET() {
 
     const data = await response.json();
     
-    // Featured post slugs - these are the ONLY posts we want for the homepage
+    // Featured post slugs - these are the ONLY posts we want for the homepage (optimized for performance)
     const featuredSlugs = ['living-in-truth', 'achievement-isnt-enough', 'living-past-fear'];
     
     // Transform and filter the data to match our frontend needs
