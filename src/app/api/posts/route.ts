@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server'
-import { estimateReadTime } from '@/lib/utils'
 
 interface BeehiivPost {
   id: string;
@@ -15,6 +14,7 @@ interface BeehiivPost {
   content?: { free?: { web?: string } };
   free_web_content?: string;
   content_html?: string;
+  meta_default_description?: string;
 };
 
 interface TransformedPost {
@@ -27,7 +27,6 @@ interface TransformedPost {
   thumbnailUrl?: string;
   webUrl: string;
   tags: string[];
-  readTime: string;
 }
 
 export async function GET() {
@@ -66,7 +65,7 @@ export async function GET() {
     const data = await response.json();
     
     // Featured post slugs - these are the ONLY posts we want for the homepage (optimized for performance)
-    const featuredSlugs = ['living-in-truth', 'achievement-isnt-enough', 'living-past-fear'];
+    const featuredSlugs = ['the-courage-we-need-most', 'achievement-isnt-enough', 'living-past-fear'];
     
     // Transform and filter the data to match our frontend needs
     const allPosts: TransformedPost[] = data.data?.filter((post: BeehiivPost) => {
@@ -86,7 +85,7 @@ export async function GET() {
         thumbnailUrl: post.thumbnail_url,
         webUrl: post.web_url,
         tags: post.content_tags ? post.content_tags.slice(0, 3) : [],
-        readTime: estimateReadTime(post.subtitle || post.title), // Estimate from subtitle/title for speed
+        // readTime removed from preview cards
       };
     }) || [];
 

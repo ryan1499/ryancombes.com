@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server'
-import { estimateReadTime } from '@/lib/utils'
 
 interface BeehiivPost {
   id: string;
@@ -15,7 +14,9 @@ interface BeehiivPost {
   content?: { free?: { web?: string } };
   free_web_content?: string;
   content_html?: string;
+  meta_default_description?: string;
 };
+
 
 export async function GET() {
   try {
@@ -69,7 +70,6 @@ export async function GET() {
         thumbnailUrl: post.thumbnail_url,
         webUrl: post.web_url,
         tags: post.content_tags ? post.content_tags.slice(0, 3) : [],
-        readTime: estimateReadTime(post.subtitle || post.title),
       };
     }) || [];
 

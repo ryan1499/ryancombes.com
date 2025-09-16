@@ -9,7 +9,6 @@ type Post = {
   id: string;
   title: string;
   subtitle: string;
-  readTime: string;
   tags: string[];
   webUrl: string;
   slug: string;
@@ -150,12 +149,6 @@ export default function Archive() {
                       >
                         {formatDate(post.publishedAt)}
                       </time>
-                      <span 
-                        className="text-sm"
-                        style={{color: '#5A5856'}}
-                      >
-                        {post.readTime}
-                      </span>
                     </div>
                     
                     <h2 className="text-xl md:text-2xl font-playfair font-semibold mb-3" style={{color: '#1F1F1F'}}>

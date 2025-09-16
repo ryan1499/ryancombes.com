@@ -17,7 +17,6 @@ type Post = {
   id: string;
   title: string;
   subtitle: string;
-  readTime: string;
   tags: string[];
   webUrl: string;
   publishedAt: string;
@@ -42,7 +41,7 @@ export default function Home() {
       const data = await response.json();
       
       // Show specific featured posts
-      const featuredSlugs = ['living-in-truth', 'achievement-isnt-enough', 'living-past-fear'];
+      const featuredSlugs = ['the-courage-we-need-most', 'achievement-isnt-enough', 'living-past-fear'];
       const allPosts = data.posts || [];
       const featuredPosts = featuredSlugs.map(slug => 
         allPosts.find((post: Post) => post.slug === slug)
@@ -105,7 +104,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative overflow-hidden py-12 md:py-16 px-6" role="banner">
+      <header className="relative overflow-hidden pt-12 md:pt-16 pb-0 px-6" role="banner">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,7 +146,7 @@ Now I write about the courage it takes to live free, grounded, and whole.
               Brave Enough Newsletter
             </h2>
             <p className="mb-6 text-base font-normal text-brand-muted">
-            Weekly letters with honest stories and questions on becoming more courageous, grounded, and whole.
+            Weekly letters with honest stories and questions on building the courage we need most.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
@@ -180,7 +179,7 @@ Now I write about the courage it takes to live free, grounded, and whole.
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center space-x-6 mb-4"
+            className="flex justify-center space-x-6 mb-6"
           >
             {socialLinks.map((link) => (
               <motion.a
@@ -200,8 +199,8 @@ Now I write about the courage it takes to live free, grounded, and whole.
       </header>
 
       {/* Divider */}
-      <div className="flex justify-center mb-6">
-        <div className="w-16 h-px bg-brand-border opacity-50"></div>
+      <div className="flex justify-center mt-2 mb-8">
+        <div className="w-32 h-0.5" style={{backgroundColor: '#DFDFDF'}}></div>
       </div>
 
       {/* Featured Posts */}
@@ -269,7 +268,6 @@ Now I write about the courage it takes to live free, grounded, and whole.
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3 text-sm text-brand-muted">
                       <span>{new Date(parseInt(post.publishedAt) * 1000).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                      <span>{post.readTime}</span>
                     </div>
                     
                     <h3 className="text-xl font-playfair font-semibold mb-3 leading-tight text-brand-dark">
