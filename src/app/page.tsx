@@ -41,7 +41,7 @@ export default function Home() {
       const data = await response.json();
       
       // Show specific featured posts
-      const featuredSlugs = ['the-courage-we-need-most', 'achievement-isnt-enough', 'living-past-fear'];
+      const featuredSlugs = ['the-price-of-being-right', 'achievement-isnt-enough', 'living-past-fear'];
       const allPosts = data.posts || [];
       const featuredPosts = featuredSlugs.map(slug => 
         allPosts.find((post: Post) => post.slug === slug)
