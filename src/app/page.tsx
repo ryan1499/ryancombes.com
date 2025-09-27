@@ -133,6 +133,10 @@ export default function Home() {
 	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
 Now I write about the courage to stop surviving and start living.
 </p>
+            
+            <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
+Join me below to face fear together and find the courage that expands life.
+</p>
           </motion.div>
 
           {/* Newsletter Signup */}
