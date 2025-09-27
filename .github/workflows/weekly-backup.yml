@@ -58,9 +58,11 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Check if there are any changes
+          # Force add the backup directory (override .gitignore)
+          git add -f content-backup/
+          
+          # Check if there are any changes after adding
           if [[ -n $(git status --porcelain) ]]; then
-            git add content-backup/
             git commit -m "🔄 Weekly content backup - $(date '+%Y-%m-%d')"
             git push
             echo "✅ Backup committed and pushed successfully"
