@@ -75,10 +75,11 @@ jobs:
             echo "ℹ️ No changes to commit"
           else
             echo "✅ Changes detected, committing..."
-            git commit -m "🔄 Weekly content backup - $(date '+%Y-%m-%d')
+            BACKUP_COUNT=$(find content-backup -name "*.md" | wc -l)
+            git commit -m "Weekly content backup - $(date '+%Y-%m-%d')
 
-🤖 Automated backup containing:
-- $(find content-backup -name "*.md" | wc -l) individual post files
+Automated backup containing:
+- ${BACKUP_COUNT} individual post files
 - GPT-optimized archive for ChatGPT
 - Backup metadata and documentation
 
