@@ -141,7 +141,7 @@ export default function Archive() {
                   )}
                   
                   {/* Content */}
-                  <div className="flex-1 p-6">
+                  <div className="flex-1 pt-6 px-6 pb-3">
                     <div className="flex items-center justify-between mb-3">
                       <time 
                         className="text-sm font-normal"
