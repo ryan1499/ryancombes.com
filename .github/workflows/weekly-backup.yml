@@ -1,0 +1,83 @@
+name: Weekly Content Backup
+
+on:
+  schedule:
+    # Run every Sunday at 2 AM UTC (adjust timezone as needed)
+    - cron: '0 2 * * 0'
+  
+  # Allow manual triggering for testing
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  backup-content:
+    runs-on: ubuntu-latest
+    name: Backup Beehiiv Content
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use a personal access token to allow the action to push back to the repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          # Only install what we need for the backup script
+          npm install node-fetch
+      
+      - name: Run backup script
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+        run: |
+          echo "🚀 Starting weekly content backup..."
+          node scripts/backup-content.js
+      
+      - name: Verify backup created
+        run: |
+          if [ -d "content-backup" ]; then
+            echo "✅ Backup directory created successfully"
+            echo "📊 Backup contains $(find content-backup -name "*.md" | wc -l) markdown files"
+            ls -la content-backup/
+          else
+            echo "❌ Backup directory not found"
+            exit 1
+          fi
+      
+      - name: Commit and push backup
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if there are any changes
+          if [[ -n $(git status --porcelain) ]]; then
+            git add content-backup/
+            git commit -m "🔄 Weekly content backup - $(date '+%Y-%m-%d')"
+            git push
+            echo "✅ Backup committed and pushed successfully"
+          else
+            echo "ℹ️ No changes to commit"
+          fi
+      
+      - name: Backup summary
+        run: |
+          echo "## Weekly Backup Summary" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ✅ Completed successfully" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "content-backup/backup-metadata.json" ]; then
+            TOTAL_POSTS=$(cat content-backup/backup-metadata.json | grep -o '"total_posts":[0-9]*' | cut -d':' -f2)
+            echo "**Posts Backed Up:** $TOTAL_POSTS" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "**Location:** \`content-backup/\` directory" >> $GITHUB_STEP_SUMMARY
+          echo "**Next Backup:** Next Sunday at 2 AM UTC" >> $GITHUB_STEP_SUMMARY

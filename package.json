@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prebuild": "npm run lint"
+    "prebuild": "npm run lint",
+    "backup": "node scripts/backup-content.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",

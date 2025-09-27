@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Content backup directory (contains sensitive data, regenerated weekly)
+/content-backup/
