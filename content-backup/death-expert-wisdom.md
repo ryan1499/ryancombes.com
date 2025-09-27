@@ -1,0 +1,25 @@
+---
+title: "Wisdom from a Death Expert"
+subtitle: "Or lessons from my first podcast..."
+slug: "death-expert-wisdom"
+publishedAt: "2023-09-25T16:08:43.000Z"
+thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b153f413-6580-4bd6-9c26-68bb9406c15f/the-good-funeral-guide-GFxPZSLx5kk-unsplash.jpg?t=1718473968"
+webUrl: "https://ryancombes.com/p/death-expert-wisdom"
+tags: ["wholeness","faith"]
+backup_date: "2025-09-27T18:17:52.603Z"
+beehiiv_id: "post_6df77f6b-4b97-4c6a-8d8b-cb49e686bb7e"
+---
+
+# Wisdom from a Death Expert
+
+*Or lessons from my first podcast...*
+
+
+
+Wisdom from a Death Expert Or lessons from my first podcast... Ryan Combes September 25, 2023 Hey Friend, Today, I’m changing things up. I have a special announcement. Let s get into it. A Question for You: How much do you think about death? If you re like most of us, your answer is: Not that much. Well, what if you confronted death every single day? Not in a war, or a hospital, but with normal people in their own homes. And the kicker: What if it was your job to help them die peacefully? I don t mean giving them a shot of morphine. I mean having meaningful conversations with them to help them come to terms with their own mortality. And after this, you would comfort their family and help them through the process of grieving their loved one. That would be pretty wild, right? Well, that s exactly what my first podcast guest , Jenny Schroedel, has done for over a decade (that’s right, I started a podcast). My First Podcast Guest Jenny is a hospice chaplain, the job description of which is to, provide spiritual and emotional support to patients, families, and care teams throughout the end-of-life journey. They guide individuals through spiritual and existential questions related to death , provide comfort and solace in difficult moments, and support caregivers throughout the entire process. She s also my girlfriend s mom. And she s pretty cool. I chose her for my first guest because a) she s a joy to talk with and b) she has immense wisdom to share on a topic that many of us avoid our entire lives: Death . My entire childhood was spent running from a reality that she faces every single day. And the truth is that the only way to deal with this reality is to face it head-on. As crisis-inducing as it may be, we NEED to face the reality that we and everyone we love will die. Yet, paradoxically, this can be a source of tremendous joy, gratitude, and happiness , rather than pain or sorrow. In this episode, Jenny shares why this is, along with other ideas such as: Why working with the dying is like getting a new prescription on your glasses What it was like physically witnessing 9/11 as she was about to have her first child How to prepare for the death of a loved one Why you should know all of your spouse’s passwords How working with the dying gave her the gift of wonder The difference between faith and optimism How to think about money in the context of spirituality What non-believers get wrong about faith And much, much more… What more do I have to say? It s on Spotify and Apple Podcasts , and you should listen to it right now. I promise there are nuggets in there worth your while. Personally, I found her thoughts on “why optimism is not enough” particularly fascinating. But I ll you to decide what your favorite takeaways are. That’s it! As always, if anything piques your interest, shoot me a reply. I’d love to chat about it with you and see if we can’t both grow a little wiser. Until next week. Take care, Ryan P.S. Favorite Discoveries What I m reading: East of Eden by John Steinbeck . I’m not eloquent enough to describe this book or why you should care about it. It’s a novel, which makes it infinitely more difficult to “summarize” than a self-help book. Maybe that’s a good thing? It is widely regarded as one of the best novels of all time and explores themes like evil, free will, religion, and more. That’s all I’ll say. A friend and priest mentioned it to me and, so far, I’m grateful for the recommendation. A favorite quote: “…the proofs that God does not exist are very strong, but in lots of people they are not as strong as the feeling that He does.” “But you said you did not love our father. How can you have faith in him if you didn’t love him?” “Maybe that’s the reason,” Adam said slowly, feeling his way. “Maybe if I had loved him I would have been jealous of him. You were. Maybe—maybe love makes you suspicious and doubting. Is it true that when you love a woman you are never sure—never sure of her because you aren’t sure of yourself? I can see it pretty clearly. I can see how you loved him and what it did to you. I did not love him. Maybe he loved me. He tested me and hurt me and punished me and finally he sent me out like a sacrifice, maybe to make up for something. But he did not love you, and so he had faith in you. Maybe—why, maybe it’s a kind of reverse.” John Steinbeck, East of Eden
+
+---
+
+**Original URL:** https://ryancombes.com/p/death-expert-wisdom
+**Backup Date:** 9/27/2025
+**Beehiiv ID:** post_6df77f6b-4b97-4c6a-8d8b-cb49e686bb7e

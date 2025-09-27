@@ -1,0 +1,25 @@
+---
+title: "The price of freedom"
+subtitle: "Did I grow up too fast? "
+slug: "price-of-freedom"
+publishedAt: "2024-04-28T13:00:00.000Z"
+thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/db8d3899-0074-4fba-bf58-f386bf8b5585/pablo-heimplatz-EAvS-4KnGrk-unsplash.jpg?t=1718473576"
+webUrl: "https://ryancombes.com/p/price-of-freedom"
+tags: ["wholeness","masculinity"]
+backup_date: "2025-09-27T18:17:58.723Z"
+beehiiv_id: "post_e263afc7-5d1a-461a-8a57-d3f6d1828859"
+---
+
+# The price of freedom
+
+*Did I grow up too fast? *
+
+
+
+The price of freedom Did I grow up too fast? Ryan Combes April 28, 2024 Hey Friend, People have warned me not to grow up too fast. Enjoy your youth, your lack of responsibilities, etc. Did I grow up too fast? Well, first of all, I didn’t have much of a choice. At 16, I was being pushed by my dad to drop of out school, break up with my girlfriend, and move to a farm in the boonies of Australia before the world ended. Part of my decision process for whether or not go to college was considering the pros and cons of being in school if/when WWIII broke out (pros: school has to feed you & you are exempt from a military draft, cons: not on a farm with your own food supply). You have to grow up pretty quickly to make those decisions. Now, at 24, I’m getting married, converting to Christianity, and have a demanding full-time (remote) job. Did I grow up too fast? Sometimes, I worry the answer is yes. I ask myself, “Am I getting married too young? What if we grow apart? What if I’m just getting brainwashed? Should I sacrifice travel for work? What if time slips away, and the next thing I know I’m having a mid-life crisis because I got lost in responsibilities to others and forgot my own dreams?” I’ve thought long and hard about these questions and fears. Then, I think about the alternative extreme: remain a bachelor for the foreseeable future, continue to dip my toes into various forms of spirituality, and make enough money from my laptop to work as little as possible while I travel for as long as I wish. This was the plan for years. I never imagined I’d get married in my 20’s, as that’s the time to explore and be free from all responsibility, right? Upon reflection, I think what I underestimated was how quickly I’d hit diminishing returns on exploration, be it in relationships, spirituality, or work. Inherent in exploration is the fact that you’re giving up depth for breadth. You can only know a place so well when you visit for a week, or even a month, compared to living there for 10 years. Eventually, you realize that aimless exploration has a tremendous cost. It’s not immediately tangible, which is why it’s so easy to put off decisions (the etymology of which is “to cut off”), but that doesn’t make the cost go away. It’s like missing out on the gains from compound interest in a stock portfolio. Money isn’t the only investment that compounds. As tech-entrepreneur-turned-philosopher Naval Ravikant has said, “All the benefits in life come from compound interest.” After a number of digital nomad stints abroad, I have come to realize that exploration, while exciting in the moment, usually lacks the purpose and growth that only comes from dedicating yourself to one mission, person, faith, or place. And after years of intense self-reflection, I now know that purpose and growth are generally more meaningful to me than excitement. Now, don’t get me wrong: I am still in the very early stages of commitment on most of those fronts, traveling is something I’ll probably never stop doing, and I still intend on living an exciting life, even if I’m married. Nor am I saying you should go marry the first person you see. That said, (I think) my point with this letter is to push back against this idea that you have to wait until you’re “older” (whenever that is) before deciding that something is important to you and dedicating yourself to it. That by choosing one thing, you’re limiting your freedom. This is only half the story. The freedom that being engaged in your 20’s gives you is kind of insane. I go to a bar in NYC on a Friday night, observe the tremendous energy, time, and money that goes into dating (or even hooking up), and say to myself, “wow, I’m so glad I’m free from that game.” Instead, I can take all of that energy, time, and money, and put it towards things that will compound over the next 50 years, rather than restart from ground zero every week and pour hundreds of dollars every month into overpriced cocktails. This is just one example, but it highlights that while it’s true that a decision closes some doors, it simultaneously opens others, and those doors might very well be much more meaningful. Or maybe I’m dead wrong and I’ll wish I spent a couple more decades vagabonding - who knows! Guess you’ll have to read my letter in 50 years to find out. 😉 Until next week. Take care, Ryan
+
+---
+
+**Original URL:** https://ryancombes.com/p/price-of-freedom
+**Backup Date:** 9/27/2025
+**Beehiiv ID:** post_e263afc7-5d1a-461a-8a57-d3f6d1828859
