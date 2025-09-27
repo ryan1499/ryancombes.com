@@ -130,7 +130,7 @@ export default function Home() {
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
 	I grew up in fear, waiting for the world to fall apart. 
             </p>
-	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
+	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
 Now I write about the courage to stop surviving and start living.
 </p>
             
