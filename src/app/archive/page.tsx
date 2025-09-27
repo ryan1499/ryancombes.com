@@ -156,7 +156,7 @@ export default function Archive() {
                     </h2>
                     
                     {post.subtitle && (
-                      <p className="text-base mb-4 font-normal leading-relaxed" style={{color: '#5A5856'}}>
+                      <p className="text-base mb-2 font-normal leading-relaxed" style={{color: '#5A5856'}}>
                         {post.subtitle}
                       </p>
                     )}
