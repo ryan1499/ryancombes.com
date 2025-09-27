@@ -124,14 +124,14 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-6 text-brand-dark">
-              Hey — I&apos;m Ryan
+              Hey — I&apos;m Ryan Combes
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
 	I grew up in fear, waiting for the world to fall apart. 
             </p>
 	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
-Now I write about the courage it takes to live free, grounded, and whole.
+Now I write about the courage to stop surviving and start living.
 </p>
           </motion.div>
 
