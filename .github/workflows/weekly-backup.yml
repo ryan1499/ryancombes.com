@@ -58,34 +58,23 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Check current status
-          echo "📋 Current git status:"
+          echo "Current git status:"
           git status
           
-          # Force add the backup directory (this should override .gitignore)
-          echo "📁 Force adding content-backup directory..."
+          echo "Force adding content-backup directory..."
           git add --force content-backup/
           
-          # Check status after force add
-          echo "📋 Status after force add:"
+          echo "Status after force add:"
           git status
           
-          # Check if there are any staged changes
           if git diff --cached --quiet; then
-            echo "ℹ️ No changes to commit"
+            echo "No changes to commit"
           else
-            echo "✅ Changes detected, committing..."
+            echo "Changes detected, committing..."
             BACKUP_COUNT=$(find content-backup -name "*.md" | wc -l)
-            git commit -m "Weekly content backup - $(date '+%Y-%m-%d')
-
-Automated backup containing:
-- ${BACKUP_COUNT} individual post files
-- GPT-optimized archive for ChatGPT
-- Backup metadata and documentation
-
-Generated with Claude Code backup system"
+            git commit -m "Weekly content backup - $(date '+%Y-%m-%d') - ${BACKUP_COUNT} posts"
             git push
-            echo "✅ Backup committed and pushed successfully"
+            echo "Backup committed and pushed successfully"
           fi
       
       - name: Backup summary
