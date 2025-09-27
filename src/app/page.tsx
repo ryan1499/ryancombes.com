@@ -135,7 +135,7 @@ Now I write about the courage to stop surviving and start living.
 </p>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
-Join me below to face fear together and find the courage that expands life.
+Join me below to discover what it means to live brave enough.
 </p>
           </motion.div>
 
