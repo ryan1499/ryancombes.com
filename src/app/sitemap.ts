@@ -14,7 +14,8 @@ async function getPosts(): Promise<Post[]> {
     
     const baseUrl = 'https://ryancombes.com';
     
-    const response = await fetch(`${baseUrl}/api/posts`, {
+    // Use /api/posts/all to get ALL posts, not just featured ones
+    const response = await fetch(`${baseUrl}/api/posts/all`, {
       next: { revalidate: 3600 }
     });
     
