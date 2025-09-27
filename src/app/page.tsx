@@ -150,7 +150,7 @@ Join me below to discover what it means to live brave enough.
               Brave Enough Newsletter
             </h2>
             <p className="mb-6 text-base font-normal text-brand-muted">
-            Weekly letters with honest stories and questions on building the courage we need most.
+            Weekly letters on building the courage that expands life.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
