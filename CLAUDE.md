@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
 - `npm run lint:fix` - Run ESLint with automatic fixes
+- `npm run backup` - Run content backup manually (creates GPT-optimized archive)
 
 ### Environment Variables Required
 - `BEEHIIV_API_KEY` - API key for Beehiiv newsletter service
@@ -37,9 +38,15 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
     - `posts/route.ts` - Fast homepage endpoint (3 featured posts)
     - `posts/all/route.ts` - Full archive endpoint (all posts)
     - `posts/[slug]/route.ts` - Individual post endpoint
+  - `sitemap.ts` - Dynamic sitemap generation (uses `/api/posts/all`)
 - `src/components/` - Reusable React components
 - `src/lib/` - Shared utility functions
   - `utils.ts` - Read time estimation and other helpers
+- `scripts/` - Utility scripts (ignored by ESLint for CommonJS compatibility)
+  - `backup-content.js` - Weekly content backup with GPT optimization
+- `.github/workflows/` - GitHub Actions for automation
+  - `weekly-backup.yml` - Automated Sunday backups
+- `content-backup/` - Weekly backup output (gitignored locally, committed by CI)
 - Root layout uses custom fonts: Playfair Display (headings) and Karla (body)
 
 ### Design System
@@ -109,6 +116,8 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - **Semantic HTML**: Proper heading hierarchy (H1→H2→H3) and semantic elements
 - **Image Optimization**: AVIF/WebP formats prioritized with proper caching headers
 - **No Inline CSS**: All styling uses Tailwind utility classes and CSS custom properties
+- **Dynamic Sitemap**: Automatically includes all 60+ articles via `/api/posts/all` endpoint
+- **Comprehensive Indexing**: Fixed critical issue where only 3 posts were discoverable (now all 60+)
 
 ### Brand Color System
 - CSS custom properties defined in globals.css for consistent theming
@@ -147,3 +156,68 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - **ESLint Rules**: Enforces React/Next.js best practices including escaped entities
 - **Common Fixes**: Use `npm run lint:fix` for automatic corrections
 - **Deployment Prevention**: Lint errors will block Vercel deployments via prebuild script
+- **ESLint Configuration**: Scripts directory ignored for CommonJS compatibility (`scripts/**` in ignores)
+- **Code Standards**: Prefer ES modules and TypeScript-compatible syntax when possible
+
+## Content Backup & ChatGPT Integration
+
+### Weekly Automated Backup System
+- **Schedule**: Every Sunday at 2 AM UTC via GitHub Actions
+- **Output**: Creates both markdown files and GPT-optimized archive
+- **Location**: `content-backup/` directory (committed to repository)
+- **GPT Format**: Single `gpt-optimized-archive.txt` file ready for ChatGPT Custom GPT upload
+
+### Backup Files Generated
+- **Individual Markdown Files**: `[slug].md` - Human-readable backup files
+- **GPT Archive**: `gpt-optimized-archive.txt` - ChatGPT Custom GPT ready format (281KB)
+- **Metadata**: `backup-metadata.json` - Post index and backup information
+- **Documentation**: `README.md` - Usage instructions for backup recovery
+
+### ChatGPT Integration
+- **Custom GPT Upload**: Use `gpt-optimized-archive.txt` in ChatGPT knowledge base
+- **Format**: Structured with clear article boundaries, metadata, and context
+- **Content**: All 60+ articles with proper formatting for GPT understanding
+- **Update Process**: Replace file weekly for fresh content
+
+### Manual Backup
+- **Command**: `npm run backup` - Run backup locally for testing
+- **Use Case**: Immediate backup or testing changes to backup script
+- **Output**: Same format as automated system
+
+### Future Automation Options
+- **OpenAI API Integration**: When Custom GPT API becomes available
+- **Real-time Updates**: Consider webhook-based updates for new posts
+- **Multiple Formats**: Additional export formats as needed
+
+## Development Standards & Best Practices
+
+### ESLint Compatibility Requirements
+- **Primary Rule**: Always use ES modules (`import/export`) instead of CommonJS (`require/module.exports`)
+- **TypeScript Compatibility**: Write TypeScript-compatible code even in `.js` files
+- **Exception**: Scripts in `scripts/` directory can use CommonJS (ignored by ESLint)
+- **Testing**: Run `npm run lint` before commits to catch issues early
+
+### Code Style Guidelines
+- **Imports**: Use `import { thing } from 'module'` instead of `const thing = require('module')`
+- **Exports**: Use `export default` or `export { }` instead of `module.exports`
+- **Variables**: Prefer `const` and `let` over `var`
+- **Functions**: Use arrow functions or function declarations consistently
+- **Type Safety**: Add TypeScript types where beneficial
+
+### Deployment Prevention
+- **Lint Errors**: Will block Vercel deployments completely
+- **Build Process**: Includes automatic linting via `prebuild` script
+- **Fix Strategy**: Use `npm run lint:fix` for automatic corrections
+- **Manual Review**: Check complex linting errors manually
+
+### Architecture Decisions
+- **API Endpoints**: Use `/api/posts/all` for complete data, `/api/posts` for featured content
+- **Sitemap Generation**: Always use `/api/posts/all` to include all articles
+- **Caching**: Different strategies per endpoint (15min homepage, 1-2hr individual posts)
+- **Content Processing**: Use cheerio for HTML parsing, avoid aggressive regex replacements
+
+### Recent Critical Fixes
+- **Sitemap SEO**: Fixed to include all 60+ articles instead of just 3 featured posts
+- **ESLint Configuration**: Added `scripts/**` to ignores for backup system compatibility
+- **Content Backup**: Implemented comprehensive backup with ChatGPT optimization
+- **Performance**: Optimized API responses from 2.8MB to ~9KB for homepage
