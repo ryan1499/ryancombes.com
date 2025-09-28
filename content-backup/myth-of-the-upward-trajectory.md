@@ -6,7 +6,7 @@ publishedAt: "2025-08-03T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f56c92e8-2cae-4395-87ba-1a6bd19337db/Myth_of_the_Upward_Trajectory.png?t=1754734368"
 webUrl: "https://ryancombes.com/p/myth-of-the-upward-trajectory"
 tags: []
-backup_date: "2025-09-27T18:18:09.696Z"
+backup_date: "2025-09-28T03:08:01.227Z"
 beehiiv_id: "post_875fdb3b-adfe-4020-a359-9a25a4e850d2"
 ---
 
@@ -21,5 +21,5 @@ The Myth of the Upward Trajectory What Idle Time Reveals About the Life You’re
 ---
 
 **Original URL:** https://ryancombes.com/p/myth-of-the-upward-trajectory
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_875fdb3b-adfe-4020-a359-9a25a4e850d2

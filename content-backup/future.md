@@ -6,7 +6,7 @@ publishedAt: "2023-06-25T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9ecab448-34f3-4bc5-b6ed-0806882b6849/Airline-NDC-vision.jpg?t=1687685817"
 webUrl: "https://ryancombes.com/p/future"
 tags: ["wholeness"]
-backup_date: "2025-09-27T18:17:48.051Z"
+backup_date: "2025-09-28T03:07:38.202Z"
 beehiiv_id: "post_09eef6d7-00e0-4869-8c6a-8f4b9eea883d"
 ---
 
@@ -21,5 +21,5 @@ Why the Future Doesn t Matter And why that s a good thing Ryan Combes June 25, 2
 ---
 
 **Original URL:** https://ryancombes.com/p/future
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_09eef6d7-00e0-4869-8c6a-8f4b9eea883d

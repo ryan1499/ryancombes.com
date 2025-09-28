@@ -6,7 +6,7 @@ publishedAt: "2023-09-10T14:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0fdcc3ad-70f0-42cc-bd1c-e9ea662cd61c/zhang-kenny-Gx1raEg_3Zw-unsplash.jpg?t=1718474130"
 webUrl: "https://ryancombes.com/p/do-nothing"
 tags: ["wholeness","inner work"]
-backup_date: "2025-09-27T18:17:50.561Z"
+backup_date: "2025-09-28T03:07:40.735Z"
 beehiiv_id: "post_04118718-d48c-4e80-bc1f-e7e4c8485a33"
 ---
 
@@ -21,5 +21,5 @@ Why It s Okay to Do Nothing The problem with influence Ryan Combes September 10,
 ---
 
 **Original URL:** https://ryancombes.com/p/do-nothing
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_04118718-d48c-4e80-bc1f-e7e4c8485a33

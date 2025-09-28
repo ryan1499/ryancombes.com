@@ -6,7 +6,7 @@ publishedAt: "2025-08-09T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/16486020-18e2-465b-9081-584fb592a40b/Who_Holds_Your_String.png?t=1754734423"
 webUrl: "https://ryancombes.com/p/who-holds-your-string"
 tags: []
-backup_date: "2025-09-27T18:18:10.449Z"
+backup_date: "2025-09-28T03:08:01.939Z"
 beehiiv_id: "post_bd59a8a7-a985-43dc-974b-44eca75f0261"
 ---
 
@@ -21,5 +21,5 @@ Who Holds Your String? A different way to fight the battles in your mind Ryan Co
 ---
 
 **Original URL:** https://ryancombes.com/p/who-holds-your-string
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_bd59a8a7-a985-43dc-974b-44eca75f0261

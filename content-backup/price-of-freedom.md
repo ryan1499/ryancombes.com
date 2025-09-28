@@ -6,7 +6,7 @@ publishedAt: "2024-04-28T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/db8d3899-0074-4fba-bf58-f386bf8b5585/pablo-heimplatz-EAvS-4KnGrk-unsplash.jpg?t=1718473576"
 webUrl: "https://ryancombes.com/p/price-of-freedom"
 tags: ["wholeness","masculinity"]
-backup_date: "2025-09-27T18:17:58.723Z"
+backup_date: "2025-09-28T03:07:49.495Z"
 beehiiv_id: "post_e263afc7-5d1a-461a-8a57-d3f6d1828859"
 ---
 
@@ -21,5 +21,5 @@ The price of freedom Did I grow up too fast? Ryan Combes April 28, 2024 Hey Frie
 ---
 
 **Original URL:** https://ryancombes.com/p/price-of-freedom
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_e263afc7-5d1a-461a-8a57-d3f6d1828859

@@ -6,7 +6,7 @@ publishedAt: "2025-09-13T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/7a07e17e-d45b-4715-9443-de45b1f22d44/the-courage-we-need-most.png?t=1757703044"
 webUrl: "https://ryancombes.com/p/the-price-of-being-right"
 tags: []
-backup_date: "2025-09-27T18:18:13.634Z"
+backup_date: "2025-09-28T03:08:05.645Z"
 beehiiv_id: "post_f5b86a0c-38e7-40ee-bd3b-4d6d8366d3e3"
 ---
 
@@ -21,5 +21,5 @@ The Price of Being Right What losing my dad taught me about love and belief. Rya
 ---
 
 **Original URL:** https://ryancombes.com/p/the-price-of-being-right
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_f5b86a0c-38e7-40ee-bd3b-4d6d8366d3e3

@@ -6,7 +6,7 @@ publishedAt: "2023-05-14T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/43f96d7d-329f-4362-a4f3-da1f30cee91d/tianshu-liu-SBK40fdKbAg-unsplash.jpg?t=1683947569"
 webUrl: "https://ryancombes.com/p/living-in-japan"
 tags: ["masculinity"]
-backup_date: "2025-09-27T18:17:43.078Z"
+backup_date: "2025-09-28T03:07:33.066Z"
 beehiiv_id: "post_8cdc6019-51bb-44c5-bd4e-fb12eba85a5d"
 ---
 
@@ -21,5 +21,5 @@ My #1 Lesson from Living in Japan How to life a free, inspiring, and professiona
 ---
 
 **Original URL:** https://ryancombes.com/p/living-in-japan
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_8cdc6019-51bb-44c5-bd4e-fb12eba85a5d

@@ -6,7 +6,7 @@ publishedAt: "2024-06-16T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/517b1d26-8105-4b28-a185-a4b954ba6c75/hidden_struggle.png?t=1757986425"
 webUrl: "https://ryancombes.com/p/living-past-fear"
 tags: ["inner work"]
-backup_date: "2025-09-27T18:18:02.618Z"
+backup_date: "2025-09-28T03:07:53.206Z"
 beehiiv_id: "post_c29a70b3-2f5b-4a56-9e57-be9194da1d3e"
 ---
 
@@ -21,5 +21,5 @@ My Hidden Struggle The grim underbelly of my drive towards courage Ryan Combes J
 ---
 
 **Original URL:** https://ryancombes.com/p/living-past-fear
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_c29a70b3-2f5b-4a56-9e57-be9194da1d3e

@@ -6,7 +6,7 @@ publishedAt: "2023-10-30T16:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/be641dbc-23b8-46a8-8154-376a2ae97b48/len-green-1200.jpg?t=1718473729"
 webUrl: "https://ryancombes.com/p/billionaire-lessons-len-green"
 tags: ["masculinity","faith"]
-backup_date: "2025-09-27T18:17:54.151Z"
+backup_date: "2025-09-28T03:07:44.930Z"
 beehiiv_id: "post_d422b240-826e-4ec3-ac5b-223fa4c5a7ad"
 ---
 
@@ -21,5 +21,5 @@ Lessons from a billionaire on success and faith An emotional rollercoaster that 
 ---
 
 **Original URL:** https://ryancombes.com/p/billionaire-lessons-len-green
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_d422b240-826e-4ec3-ac5b-223fa4c5a7ad

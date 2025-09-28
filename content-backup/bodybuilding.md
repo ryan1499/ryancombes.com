@@ -6,7 +6,7 @@ publishedAt: "2023-04-23T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/919e3a45-5328-4d08-a81b-2abbf80727e3/gorilla-freak-wt5jg8_WrJg-unsplash.jpg?t=1682215899"
 webUrl: "https://ryancombes.com/p/bodybuilding"
 tags: ["masculinity"]
-backup_date: "2025-09-27T18:17:40.537Z"
+backup_date: "2025-09-28T03:07:30.058Z"
 beehiiv_id: "post_f14a182a-f5a8-404e-aeb2-971f63af5d8c"
 ---
 
@@ -21,5 +21,5 @@ Why I Won t Compete in Bodybuilding Again Does your fitness align with your valu
 ---
 
 **Original URL:** https://ryancombes.com/p/bodybuilding
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_f14a182a-f5a8-404e-aeb2-971f63af5d8c

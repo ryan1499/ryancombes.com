@@ -6,7 +6,7 @@ publishedAt: "2025-07-18T11:44:53.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/49b4bd3d-bd96-420e-9ff8-a3c12046ae02/LTaF_Thumbnail_76.png?t=1753621505"
 webUrl: "https://ryancombes.com/p/a-new-chapter"
 tags: ["inner work","faith"]
-backup_date: "2025-09-27T18:18:08.205Z"
+backup_date: "2025-09-28T03:07:58.651Z"
 beehiiv_id: "post_39cec814-fd5a-49d4-bd3b-70a5bce517dc"
 ---
 
@@ -21,5 +21,5 @@ A New Chapter Finding Peace Within Uncertainty Ryan Combes July 18, 2025 Dear Fr
 ---
 
 **Original URL:** https://ryancombes.com/p/a-new-chapter
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_39cec814-fd5a-49d4-bd3b-70a5bce517dc

@@ -6,7 +6,7 @@ publishedAt: "2022-11-02T22:05:17.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9e00077d-2f0e-4967-ba9c-e917fbe5bfe1/Spartan_hoplite.jpg?t=1667426943"
 webUrl: "https://ryancombes.com/p/i-want-to-be-a-warrior"
 tags: []
-backup_date: "2025-09-27T18:17:26.975Z"
+backup_date: "2025-09-28T03:07:13.388Z"
 beehiiv_id: "post_90537904-4fea-4c9c-8b34-b2839da78e7f"
 ---
 
@@ -21,5 +21,5 @@ I Want to Be a Warrior Rediscovering my primal self... Ryan Combes November 02, 
 ---
 
 **Original URL:** https://ryancombes.com/p/i-want-to-be-a-warrior
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_90537904-4fea-4c9c-8b34-b2839da78e7f

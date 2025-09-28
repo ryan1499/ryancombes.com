@@ -6,7 +6,7 @@ publishedAt: "2024-03-24T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/62905a33-89e7-4f19-a5c9-26df1317d824/nathan-bingle-K9MaGDSbOTg-unsplash.jpg?t=1711648188"
 webUrl: "https://ryancombes.com/p/surprises"
 tags: ["wholeness"]
-backup_date: "2025-09-27T18:17:56.405Z"
+backup_date: "2025-09-28T03:07:47.171Z"
 beehiiv_id: "post_c1ecd220-a9b2-49e2-8186-005e96443d04"
 ---
 
@@ -21,5 +21,5 @@ Life is full of surprises On death and immovable truths Ryan Combes March 24, 20
 ---
 
 **Original URL:** https://ryancombes.com/p/surprises
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_c1ecd220-a9b2-49e2-8186-005e96443d04

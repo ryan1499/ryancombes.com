@@ -6,7 +6,7 @@ publishedAt: "2024-06-26T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ed77817a-4e84-4353-8f87-e6d9bf1aefb1/mens_retreat.png?t=1719370662"
 webUrl: "https://ryancombes.com/p/overcome-arrogance"
 tags: ["masculinity","inner work"]
-backup_date: "2025-09-27T18:18:03.733Z"
+backup_date: "2025-09-28T03:07:54.073Z"
 beehiiv_id: "post_5a65e730-ea2a-4e73-8dc0-fa91907d9a7d"
 ---
 
@@ -21,5 +21,5 @@ Overcoming arrogance My #1 lesson from 72 hours of men s work Ryan Combes June 2
 ---
 
 **Original URL:** https://ryancombes.com/p/overcome-arrogance
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_5a65e730-ea2a-4e73-8dc0-fa91907d9a7d

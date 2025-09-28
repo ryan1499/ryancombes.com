@@ -6,7 +6,7 @@ publishedAt: "2023-01-23T07:38:16.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/1545b010-f491-4547-8cb1-0d4b806c58c7/neil-thomas-SIU1Glk6v5k-unsplash.jpg?t=1678703553"
 webUrl: "https://ryancombes.com/p/oath-of-provision"
 tags: ["masculinity"]
-backup_date: "2025-09-27T18:17:32.310Z"
+backup_date: "2025-09-28T03:07:21.154Z"
 beehiiv_id: "post_3e674f97-1265-430f-b7a3-193abec66cd0"
 ---
 
@@ -21,5 +21,5 @@ Taking an Oath of Provision When did you become an adult? Ryan Combes January 23
 ---
 
 **Original URL:** https://ryancombes.com/p/oath-of-provision
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_3e674f97-1265-430f-b7a3-193abec66cd0

@@ -6,7 +6,7 @@ publishedAt: "2025-09-06T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/8f4ff478-76ae-4c8d-8af8-c490715e0c04/power_is_not_love.png?t=1757107055"
 webUrl: "https://ryancombes.com/p/power-is-not-love"
 tags: []
-backup_date: "2025-09-27T18:18:12.864Z"
+backup_date: "2025-09-28T03:08:04.471Z"
 beehiiv_id: "post_81b61c6a-2cd2-4e53-bb2b-ae27cd3816e2"
 ---
 
@@ -21,5 +21,5 @@ Power Is Not Love The cost of holding back Ryan Combes September 06, 2025 Brave 
 ---
 
 **Original URL:** https://ryancombes.com/p/power-is-not-love
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_81b61c6a-2cd2-4e53-bb2b-ae27cd3816e2

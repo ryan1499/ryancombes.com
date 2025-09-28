@@ -6,7 +6,7 @@ publishedAt: "2023-04-09T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/18a6742d-bc22-4e2e-a7e1-7b9a1e71fb55/jp-valery-mQTTDA_kY_8-unsplash.jpg?t=1681038655"
 webUrl: "https://ryancombes.com/p/running-out-of-money"
 tags: []
-backup_date: "2025-09-27T18:17:38.900Z"
+backup_date: "2025-09-28T03:07:28.450Z"
 beehiiv_id: "post_05e7e1bd-365a-478c-a3b9-8ebf03b31f0e"
 ---
 
@@ -21,5 +21,5 @@ Why Fear Being Broke? Weaken fear of a (surprisingly) harmless state. Ryan Combe
 ---
 
 **Original URL:** https://ryancombes.com/p/running-out-of-money
-**Backup Date:** 9/27/2025
+**Backup Date:** 9/28/2025
 **Beehiiv ID:** post_05e7e1bd-365a-478c-a3b9-8ebf03b31f0e
