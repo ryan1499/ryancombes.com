@@ -124,15 +124,12 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl md:text-4xl font-playfair font-normal mb-6 text-brand-dark">
-              Hey — I&apos;m Ryan Combes
+              Hey — I&apos;m Ryan
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
-	I grew up in fear, waiting for the world to fall apart. 
+	I grew up in fear, waiting for the world to fall apart. Now I write about courage and meaning. 
             </p>
-	    <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
-Now I write about the courage to stop surviving and start living.
-</p>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
 Join me below to discover what it means to live brave enough.
