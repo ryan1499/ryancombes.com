@@ -128,11 +128,11 @@ export default function Home() {
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
-	I grew up in fear, waiting for the world to fall apart. Now I write about courage and meaning. 
+	I grew up in survivalist fear. Now I write about the courage to live.
             </p>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
-Join me below to discover what it means to live brave enough.
+Join me in exploring what it means to live brave enough. 
 </p>
           </motion.div>
 
@@ -147,7 +147,7 @@ Join me below to discover what it means to live brave enough.
               Brave Enough Newsletter
             </h2>
             <p className="mb-6 text-base font-normal text-brand-muted">
-            Weekly letters on building the courage that expands life.
+            Weekly letters on building the courage that matters most.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
