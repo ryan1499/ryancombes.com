@@ -6,7 +6,7 @@ publishedAt: "2024-06-02T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f5f912f8-ff1c-46c0-baa3-ebcb830f0ae0/frame-harirak-Ei_lQ6kTwiI-unsplash.jpg?t=1718473518"
 webUrl: "https://ryancombes.com/p/simple-advice-good-decisions"
 tags: ["wholeness"]
-backup_date: "2025-09-28T03:07:51.662Z"
+backup_date: "2025-10-05T03:06:57.311Z"
 beehiiv_id: "post_a20efb4b-05c2-44e3-bb6a-adeb97c5ea7f"
 ---
 
@@ -19,5 +19,5 @@ Simple advice I didn’t appreciate until now Ryan Combes June 02, 2024 Hey frie
 ---
 
 **Original URL:** https://ryancombes.com/p/simple-advice-good-decisions
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_a20efb4b-05c2-44e3-bb6a-adeb97c5ea7f

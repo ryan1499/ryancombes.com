@@ -6,7 +6,7 @@ publishedAt: "2024-06-09T19:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/75d4a7e6-8245-4875-8ada-86fd3dd93b64/cookie_jar.jpg?t=1717958665"
 webUrl: "https://ryancombes.com/p/cookie-jar"
 tags: ["wholeness","inner work"]
-backup_date: "2025-09-28T03:07:52.391Z"
+backup_date: "2025-10-05T03:06:58.076Z"
 beehiiv_id: "post_ac4fe793-6778-418f-9536-ddd167c66e9a"
 ---
 
@@ -21,5 +21,5 @@ The cookie jar On finding confidence, gratitude, and meaning Ryan Combes June 09
 ---
 
 **Original URL:** https://ryancombes.com/p/cookie-jar
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_ac4fe793-6778-418f-9536-ddd167c66e9a

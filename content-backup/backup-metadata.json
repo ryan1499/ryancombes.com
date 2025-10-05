@@ -1,6 +1,6 @@
 {
-  "backup_date": "2025-09-28T03:08:07.391Z",
-  "total_posts": 60,
+  "backup_date": "2025-10-05T03:07:12.017Z",
+  "total_posts": 61,
   "posts": [
     {
       "id": "post_90537904-4fea-4c9c-8b34-b2839da78e7f",
@@ -313,9 +313,9 @@
     {
       "id": "post_c29a70b3-2f5b-4a56-9e57-be9194da1d3e",
       "title": "My Hidden Struggle",
-      "slug": "living-past-fear",
+      "slug": "my-hidden-struggle",
       "publishedAt": "2024-06-16T13:00:00.000Z",
-      "webUrl": "https://ryancombes.com/p/living-past-fear"
+      "webUrl": "https://ryancombes.com/p/my-hidden-struggle"
     },
     {
       "id": "post_5a65e730-ea2a-4e73-8dc0-fa91907d9a7d",
@@ -421,6 +421,13 @@
       "slug": "sometimes-normal-is-enough",
       "publishedAt": "2025-09-20T13:00:00.000Z",
       "webUrl": "https://ryancombes.com/p/sometimes-normal-is-enough"
+    },
+    {
+      "id": "post_d8e20b32-9323-4365-b91a-5fba02eff97f",
+      "title": "The Cost of Survival ",
+      "slug": "the-cost-of-survival",
+      "publishedAt": "2025-10-04T13:00:00.000Z",
+      "webUrl": "https://ryancombes.com/p/the-cost-of-survival"
     }
   ]
 }

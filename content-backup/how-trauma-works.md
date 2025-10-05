@@ -6,7 +6,7 @@ publishedAt: "2022-12-06T18:38:40.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/944a566f-e6b8-421a-a484-4f725aeab131/nik-shuliahin-BuNWp1bL0nc-unsplash.jpg?t=1678703655"
 webUrl: "https://ryancombes.com/p/how-trauma-works"
 tags: ["inner work"]
-backup_date: "2025-09-28T03:07:17.669Z"
+backup_date: "2025-10-05T03:06:26.923Z"
 beehiiv_id: "post_1ed40c41-424d-4e35-a3a5-463f568793b7"
 ---
 
@@ -21,5 +21,5 @@ How Trauma Works (And Why You Should Care) What triggers you says a lot about wh
 ---
 
 **Original URL:** https://ryancombes.com/p/how-trauma-works
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_1ed40c41-424d-4e35-a3a5-463f568793b7

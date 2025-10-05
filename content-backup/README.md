@@ -2,9 +2,9 @@
 
 This directory contains a weekly backup of all posts from the Beehiiv API.
 
-**Backup Date:** 9/28/2025
-**Total Posts:** 60
-**Last Updated:** 2025-09-28T03:08:07.392Z
+**Backup Date:** 10/5/2025
+**Total Posts:** 61
+**Last Updated:** 2025-10-05T03:07:12.018Z
 
 ## Files
 

@@ -6,7 +6,7 @@ publishedAt: "2023-10-01T17:38:24.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/6b4a8b7d-b6ff-44c1-a8cb-62369ffc4d5b/orthodox-priest.png?t=1718473895"
 webUrl: "https://ryancombes.com/p/orthodox-priest-lessons-on-meaning"
 tags: ["faith"]
-backup_date: "2025-09-28T03:07:44.189Z"
+backup_date: "2025-10-05T03:06:49.885Z"
 beehiiv_id: "post_019855d1-da49-4cff-b6c2-b2b3d07abe1b"
 ---
 
@@ -21,5 +21,5 @@ What an Orthodox Priest Has to Teach You priest ? If you d have asked me that qu
 ---
 
 **Original URL:** https://ryancombes.com/p/orthodox-priest-lessons-on-meaning
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_019855d1-da49-4cff-b6c2-b2b3d07abe1b

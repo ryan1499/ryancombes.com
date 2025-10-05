@@ -6,7 +6,7 @@ publishedAt: "2023-06-18T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/51e9f17e-24dc-4feb-b960-c33291bab2bb/joshua-earle--87JyMb9ZfU-unsplash.jpg?t=1687073853"
 webUrl: "https://ryancombes.com/p/extraordinary"
 tags: ["masculinity"]
-backup_date: "2025-09-28T03:07:37.343Z"
+backup_date: "2025-10-05T03:06:44.193Z"
 beehiiv_id: "post_314b59d9-ad57-4f16-99fe-38f2d4dd0a62"
 ---
 
@@ -21,5 +21,5 @@ For the Young Man Who Wants to be Extraordinary A lesson in ambition and stress 
 ---
 
 **Original URL:** https://ryancombes.com/p/extraordinary
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_314b59d9-ad57-4f16-99fe-38f2d4dd0a62

@@ -6,7 +6,7 @@ publishedAt: "2024-04-21T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5d5a35d4-cd3e-42ce-b8df-c7ff62adc9de/josh-applegate-g0WjhnQRTa8-unsplash.jpg?t=1713639631"
 webUrl: "https://ryancombes.com/p/religion"
 tags: ["faith"]
-backup_date: "2025-09-28T03:07:48.754Z"
+backup_date: "2025-10-05T03:06:54.360Z"
 beehiiv_id: "post_6adf16ff-50e0-4b45-9742-6a50edea6a92"
 ---
 
@@ -21,5 +21,5 @@ Religion My journey from atheism to Christianity Ryan Combes April 21, 2024 Hey 
 ---
 
 **Original URL:** https://ryancombes.com/p/religion
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_6adf16ff-50e0-4b45-9742-6a50edea6a92

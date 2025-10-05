@@ -6,7 +6,7 @@ publishedAt: "2023-06-11T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2aa5c3ee-63e0-44a9-bb37-76a891a3f634/clark-tibbs-oqStl2L5oxI-unsplash.jpg?t=1686477815"
 webUrl: "https://ryancombes.com/p/passion-career"
 tags: ["wholeness"]
-backup_date: "2025-09-28T03:07:36.477Z"
+backup_date: "2025-10-05T03:06:43.283Z"
 beehiiv_id: "post_03012712-890d-490d-98fb-c77adcf89de5"
 ---
 
@@ -21,5 +21,5 @@ An (Actionable) Alternative to What s My Passion? Or how to create a career you 
 ---
 
 **Original URL:** https://ryancombes.com/p/passion-career
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_03012712-890d-490d-98fb-c77adcf89de5

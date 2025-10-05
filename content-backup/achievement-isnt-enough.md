@@ -6,7 +6,7 @@ publishedAt: "2025-08-23T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f6b8a8e7-867a-46d5-ab8b-d1a15f4be785/Achievement_isnt_enough.png?t=1755795567"
 webUrl: "https://ryancombes.com/p/achievement-isnt-enough"
 tags: []
-backup_date: "2025-09-28T03:08:02.818Z"
+backup_date: "2025-10-05T03:07:07.399Z"
 beehiiv_id: "post_b6c91507-7137-4ff1-ade1-4dc190e410b6"
 ---
 
@@ -21,5 +21,5 @@ Achievement Isn’t Enough On the treasure success can’t buy Ryan Combes Augus
 ---
 
 **Original URL:** https://ryancombes.com/p/achievement-isnt-enough
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_b6c91507-7137-4ff1-ade1-4dc190e410b6

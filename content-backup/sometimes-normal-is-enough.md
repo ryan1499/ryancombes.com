@@ -6,7 +6,7 @@ publishedAt: "2025-09-20T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/3a15ab4a-af2b-48ad-9ba7-73fe59280e02/sometimes_normal_is_enough.png?t=1758129626"
 webUrl: "https://ryancombes.com/p/sometimes-normal-is-enough"
 tags: []
-backup_date: "2025-09-28T03:08:06.890Z"
+backup_date: "2025-10-05T03:07:10.609Z"
 beehiiv_id: "post_92ee498e-f365-4822-bdb6-3d175fd6ad7b"
 ---
 
@@ -21,5 +21,5 @@ Sometimes, Normal Is Enough The simple sentence that cracks our script. Ryan Com
 ---
 
 **Original URL:** https://ryancombes.com/p/sometimes-normal-is-enough
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_92ee498e-f365-4822-bdb6-3d175fd6ad7b

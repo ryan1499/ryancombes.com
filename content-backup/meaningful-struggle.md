@@ -6,7 +6,7 @@ publishedAt: "2023-03-19T11:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5dd26deb-e333-47c3-bc86-beadeb9a44cd/d-jonez-jj4x2mlEYQ0-unsplash.jpg?t=1679196264"
 webUrl: "https://ryancombes.com/p/meaningful-struggle"
 tags: []
-backup_date: "2025-09-28T03:07:25.852Z"
+backup_date: "2025-10-05T03:06:32.917Z"
 beehiiv_id: "post_3776c93b-195e-40d0-a652-b0a3ff9abae4"
 ---
 
@@ -21,5 +21,5 @@ The Biggest Lie About Happiness Why retirement is B.S... Ryan Combes March 19, 2
 ---
 
 **Original URL:** https://ryancombes.com/p/meaningful-struggle
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_3776c93b-195e-40d0-a652-b0a3ff9abae4

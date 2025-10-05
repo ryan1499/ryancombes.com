@@ -6,7 +6,7 @@ publishedAt: "2023-12-31T14:39:44.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/c5e36e4c-ebbd-48c0-b1bb-4889300097f5/477660E7-3388-4B3D-9C77-BD972E251377.JPG?t=1704030704"
 webUrl: "https://ryancombes.com/p/marriage"
 tags: ["wholeness","faith"]
-backup_date: "2025-09-28T03:07:46.454Z"
+backup_date: "2025-10-05T03:06:52.109Z"
 beehiiv_id: "post_75e9930d-20a1-4b09-85db-5a3b178216bd"
 ---
 
@@ -21,5 +21,5 @@ Marriage + faith Rewriting my story on life-long union Ryan Combes December 31, 
 ---
 
 **Original URL:** https://ryancombes.com/p/marriage
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_75e9930d-20a1-4b09-85db-5a3b178216bd

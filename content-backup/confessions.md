@@ -6,7 +6,7 @@ publishedAt: "2024-04-07T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/4ddd0791-8d75-42f1-a579-002daed182ca/sean-benesh-VnmbcgAfL3Q-unsplash.jpg?t=1713642504"
 webUrl: "https://ryancombes.com/p/confessions"
 tags: ["masculinity"]
-backup_date: "2025-09-28T03:07:48.049Z"
+backup_date: "2025-10-05T03:06:53.601Z"
 beehiiv_id: "post_15718d9e-3bf1-444b-8fbb-f980a127b3d5"
 ---
 
@@ -21,5 +21,5 @@ Confessions of an aspiring man My struggle to balance freedom and responsibility
 ---
 
 **Original URL:** https://ryancombes.com/p/confessions
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_15718d9e-3bf1-444b-8fbb-f980a127b3d5

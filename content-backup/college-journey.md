@@ -6,7 +6,7 @@ publishedAt: "2024-05-15T13:30:11.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/66b2e648-a07b-4bee-a734-b19dd6b7e77e/sean-benesh-vfJPtNFGfVs-unsplash.jpg?t=1715741461"
 webUrl: "https://ryancombes.com/p/college-journey"
 tags: ["wholeness","faith"]
-backup_date: "2025-09-28T03:07:50.951Z"
+backup_date: "2025-10-05T03:06:56.579Z"
 beehiiv_id: "post_971a51b0-f1f9-4a1f-8ef6-b3884c5c7026"
 ---
 
@@ -21,5 +21,5 @@ I didn t think I d make it Reflections on my college journey Ryan Combes May 15,
 ---
 
 **Original URL:** https://ryancombes.com/p/college-journey
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_971a51b0-f1f9-4a1f-8ef6-b3884c5c7026

@@ -6,7 +6,7 @@ publishedAt: "2023-05-28T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/42d94faf-78c1-4c20-8785-8f31a54a4593/nitin-garg-h6jP-QeVV_w-unsplash.jpg?t=1685260180"
 webUrl: "https://ryancombes.com/p/wealth"
 tags: []
-backup_date: "2025-09-28T03:07:34.916Z"
+backup_date: "2025-10-05T03:06:41.710Z"
 beehiiv_id: "post_024db95e-3d8c-49e7-b3cc-a90b958c95b4"
 ---
 
@@ -21,5 +21,5 @@ What s Actually Keeping You (and Me) Poor The connection between wealth and self
 ---
 
 **Original URL:** https://ryancombes.com/p/wealth
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_024db95e-3d8c-49e7-b3cc-a90b958c95b4

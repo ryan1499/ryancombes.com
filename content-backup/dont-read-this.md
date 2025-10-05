@@ -6,7 +6,7 @@ publishedAt: "2023-06-04T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ccbc7c9f-12d3-4c38-924d-228caa906585/ron-mcclenny-EpHH_NKwKkE-unsplash.jpg?t=1685866836"
 webUrl: "https://ryancombes.com/p/dont-read-this"
 tags: []
-backup_date: "2025-09-28T03:07:35.621Z"
+backup_date: "2025-10-05T03:06:42.439Z"
 beehiiv_id: "post_d691cee5-ac1a-40e9-8fcd-2116ed636b39"
 ---
 
@@ -19,5 +19,5 @@ Don t Read This Newsletter Ryan Combes June 04, 2023 Hey Friend, Today, I feel l
 ---
 
 **Original URL:** https://ryancombes.com/p/dont-read-this
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_d691cee5-ac1a-40e9-8fcd-2116ed636b39

@@ -6,7 +6,7 @@ publishedAt: "2023-09-25T16:08:43.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b153f413-6580-4bd6-9c26-68bb9406c15f/the-good-funeral-guide-GFxPZSLx5kk-unsplash.jpg?t=1718473968"
 webUrl: "https://ryancombes.com/p/death-expert-wisdom"
 tags: ["wholeness","faith"]
-backup_date: "2025-09-28T03:07:43.248Z"
+backup_date: "2025-10-05T03:06:49.138Z"
 beehiiv_id: "post_6df77f6b-4b97-4c6a-8d8b-cb49e686bb7e"
 ---
 
@@ -21,5 +21,5 @@ Wisdom from a Death Expert Or lessons from my first podcast... Ryan Combes Septe
 ---
 
 **Original URL:** https://ryancombes.com/p/death-expert-wisdom
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_6df77f6b-4b97-4c6a-8d8b-cb49e686bb7e

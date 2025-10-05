@@ -6,7 +6,7 @@ publishedAt: "2022-11-09T15:05:23.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ed51e1c4-6eee-490f-b376-bafd5f1c6063/nong-v-9pw4TKvT3po-unsplash.jpg?t=1668006422"
 webUrl: "https://ryancombes.com/p/how-can-your-story-give-you-purpose"
 tags: []
-backup_date: "2025-09-28T03:07:14.204Z"
+backup_date: "2025-10-05T03:06:23.679Z"
 beehiiv_id: "post_6b47843a-f9c3-48ae-babe-9060535c87f4"
 ---
 
@@ -21,5 +21,5 @@ How Can Your Story Give You Purpose? A guide to finding your unique offering to 
 ---
 
 **Original URL:** https://ryancombes.com/p/how-can-your-story-give-you-purpose
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_6b47843a-f9c3-48ae-babe-9060535c87f4

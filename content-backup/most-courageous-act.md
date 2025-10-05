@@ -6,7 +6,7 @@ publishedAt: "2024-05-07T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/73e00dee-9b17-40dd-87d9-7356a0afd04d/spacex-6SbFGnQTE8s-unsplash.jpg?t=1715054975"
 webUrl: "https://ryancombes.com/p/most-courageous-act"
 tags: ["wholeness","masculinity"]
-backup_date: "2025-09-28T03:07:50.192Z"
+backup_date: "2025-10-05T03:06:55.850Z"
 beehiiv_id: "post_d552c76f-04b9-4269-9f96-744ffeca5109"
 ---
 
@@ -21,5 +21,5 @@ The most courageous act Elon Musk, inner work, and how to live Ryan Combes May 0
 ---
 
 **Original URL:** https://ryancombes.com/p/most-courageous-act
-**Backup Date:** 9/28/2025
+**Backup Date:** 10/5/2025
 **Beehiiv ID:** post_d552c76f-04b9-4269-9f96-744ffeca5109
