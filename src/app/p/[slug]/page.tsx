@@ -18,8 +18,13 @@ type Post = {
 async function getPost(slug: string): Promise<Post | null> {
   try {
     // Use our optimized API route instead of hitting Beehiiv directly
+    // Use the correct port for development
+    const baseUrl = process.env.NODE_ENV === 'development' 
+      ? 'http://localhost:3001' // Fixed to use correct dev port
+      : 'https://ryancombes.com';
+    
     const response = await fetch(
-      `${process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://ryancombes.com'}/api/posts/${slug}`,
+      `${baseUrl}/api/posts/${slug}`,
       {
         next: { revalidate: 3600 }
       }

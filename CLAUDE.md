@@ -221,3 +221,7 @@ This is a Next.js 15 personal website and newsletter platform for Ryan Combes, b
 - **ESLint Configuration**: Added `scripts/**` to ignores for backup system compatibility
 - **Content Backup**: Implemented comprehensive backup with ChatGPT optimization
 - **Performance**: Optimized API responses from 2.8MB to ~9KB for homepage
+- **Duplicate Definitions**: Consolidated shared constants and types to eliminate sync issues
+- **Header Formatting**: Fixed CSS that was flattening header hierarchy in post content  
+- **Development URLs**: Fixed localhost port conflicts in post page API calls
+- **Mobile Spacing**: Fixed uneven dot spacing in post metadata on mobile devices
