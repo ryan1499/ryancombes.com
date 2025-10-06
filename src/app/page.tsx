@@ -40,14 +40,8 @@ export default function Home() {
       const response = await fetch('/api/posts');
       const data = await response.json();
       
-      // Show specific featured posts
-      const featuredSlugs = ['the-cost-of-survival', 'achievement-isnt-enough', 'power-is-not-love'];
-      const allPosts = data.posts || [];
-      const featuredPosts = featuredSlugs.map(slug => 
-        allPosts.find((post: Post) => post.slug === slug)
-      ).filter(Boolean);
-      
-      setPosts(featuredPosts.length > 0 ? featuredPosts : allPosts.slice(0, 3));
+      // API already returns featured posts in the correct order
+      setPosts(data.posts || []);
     } catch (error) {
       console.error('Error fetching posts:', error);
       setPosts([]);
