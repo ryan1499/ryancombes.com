@@ -6,7 +6,7 @@ publishedAt: "2022-11-15T15:37:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0e6023d3-0329-4944-85d2-1526f95a9aa6/kelly-sikkema-r077pfFsdaU-unsplash.jpg?t=1668526746"
 webUrl: "https://ryancombes.com/p/how-being-a-big-monkey-can-make-you-happier"
 tags: []
-backup_date: "2025-10-05T03:06:26.116Z"
+backup_date: "2025-10-06T15:20:40.597Z"
 beehiiv_id: "post_8d1bbc1c-c759-42a0-bef7-862e8d4fa7c5"
 ---
 
@@ -21,5 +21,5 @@ How Being a Big Monkey Can Make You Happier A simple guide to feeling good Ryan 
 ---
 
 **Original URL:** https://ryancombes.com/p/how-being-a-big-monkey-can-make-you-happier
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_8d1bbc1c-c759-42a0-bef7-862e8d4fa7c5

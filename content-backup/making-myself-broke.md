@@ -6,7 +6,7 @@ publishedAt: "2023-02-16T10:30:59.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/672277ea-f543-45c5-b3f7-4b41f8e290a4/emil-kalibradov-K05Udh2LhFA-unsplash.jpg?t=1678703429"
 webUrl: "https://ryancombes.com/p/making-myself-broke"
 tags: []
-backup_date: "2025-10-05T03:06:30.230Z"
+backup_date: "2025-10-06T15:20:44.551Z"
 beehiiv_id: "post_82928ff4-706c-49b7-affd-b99816bfb0b6"
 ---
 
@@ -21,5 +21,5 @@ Making Myself Broke (On Purpose) A (not so) crazy idea? Ryan Combes February 16,
 ---
 
 **Original URL:** https://ryancombes.com/p/making-myself-broke
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_82928ff4-706c-49b7-affd-b99816bfb0b6

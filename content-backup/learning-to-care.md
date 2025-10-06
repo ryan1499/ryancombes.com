@@ -6,7 +6,7 @@ publishedAt: "2024-12-27T18:14:32.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/299e7be6-3554-4fc7-a0ad-8ecb20edd6d4/3F4BC1CE-7FBB-4108-8E44-F91F977BCAB0.jpg?t=1735323245"
 webUrl: "https://ryancombes.com/p/learning-to-care"
 tags: ["wholeness","inner work"]
-backup_date: "2025-10-05T03:07:02.685Z"
+backup_date: "2025-10-06T15:21:22.234Z"
 beehiiv_id: "post_b178f266-9d22-45b9-a354-9dbfc47c0115"
 ---
 
@@ -21,5 +21,5 @@ Learning to care Politics, altruism, and my personal evolution Ryan Combes Decem
 ---
 
 **Original URL:** https://ryancombes.com/p/learning-to-care
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_b178f266-9d22-45b9-a354-9dbfc47c0115

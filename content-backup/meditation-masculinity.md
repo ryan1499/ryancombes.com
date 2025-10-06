@@ -6,7 +6,7 @@ publishedAt: "2023-03-13T11:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/d04e4ba4-2266-4627-b24b-7aea8ebb123f/max-vs-PjCh5goo-unsplash.jpg?t=1678703311"
 webUrl: "https://ryancombes.com/p/meditation-masculinity"
 tags: ["wholeness","masculinity"]
-backup_date: "2025-10-05T03:06:31.919Z"
+backup_date: "2025-10-06T15:20:46.352Z"
 beehiiv_id: "post_50fa19d8-0e2e-4e56-a8fd-b630d4002df6"
 ---
 
@@ -21,5 +21,5 @@ Why Meditation is Crucial for Being a Good Man It s not just about reaching Enli
 ---
 
 **Original URL:** https://ryancombes.com/p/meditation-masculinity
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_50fa19d8-0e2e-4e56-a8fd-b630d4002df6

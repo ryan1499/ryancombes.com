@@ -6,7 +6,7 @@ publishedAt: "2023-11-26T15:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/de2817f4-a168-4759-bc5e-3d73a1e23155/materialism.jpg?t=1718474585"
 webUrl: "https://ryancombes.com/p/antidote-to-materialism"
 tags: ["faith"]
-backup_date: "2025-10-05T03:06:51.383Z"
+backup_date: "2025-10-06T15:21:08.852Z"
 beehiiv_id: "post_3155a930-1ccb-438e-ba03-8ab6aa2b9af2"
 ---
 
@@ -21,5 +21,5 @@ The Antidote to Materialism A journey towards the eternal Ryan Combes November 2
 ---
 
 **Original URL:** https://ryancombes.com/p/antidote-to-materialism
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_3155a930-1ccb-438e-ba03-8ab6aa2b9af2

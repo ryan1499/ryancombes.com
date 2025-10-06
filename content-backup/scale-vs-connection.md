@@ -6,7 +6,7 @@ publishedAt: "2023-01-15T06:23:04.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/c92a2972-c731-402c-bf8c-dcbfbbf04645/markus-winkler-kXjBMw_wHx8-unsplash.jpg?t=1678703614"
 webUrl: "https://ryancombes.com/p/scale-vs-connection"
 tags: []
-backup_date: "2025-10-05T03:06:27.904Z"
+backup_date: "2025-10-06T15:20:42.231Z"
 beehiiv_id: "post_bf8c23a1-80ab-4b64-844c-8a094199e3b0"
 ---
 
@@ -21,5 +21,5 @@ Scale vs. Connection What are we really after?? Ryan Combes January 15, 2023 Wha
 ---
 
 **Original URL:** https://ryancombes.com/p/scale-vs-connection
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_bf8c23a1-80ab-4b64-844c-8a094199e3b0

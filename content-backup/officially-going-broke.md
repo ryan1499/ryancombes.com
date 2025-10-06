@@ -6,7 +6,7 @@ publishedAt: "2023-04-16T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5eeba9ae-296e-4223-b445-d634c173002a/joshua-van-der-schyff-g1_qduahbDg-unsplash.jpg?t=1681386582"
 webUrl: "https://ryancombes.com/p/officially-going-broke"
 tags: []
-backup_date: "2025-10-05T03:06:36.386Z"
+backup_date: "2025-10-06T15:20:51.456Z"
 beehiiv_id: "post_bde7423b-8922-4fba-86ce-a167c8c7554d"
 ---
 
@@ -21,5 +21,5 @@ Officially Going Broke (On Purpose) My wicked smaht post-grad plan Ryan Combes A
 ---
 
 **Original URL:** https://ryancombes.com/p/officially-going-broke
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_bde7423b-8922-4fba-86ce-a167c8c7554d

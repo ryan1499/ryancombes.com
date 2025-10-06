@@ -6,7 +6,7 @@ publishedAt: "2023-09-17T16:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/6369e37a-b932-4161-be09-ab494ff9b8bb/jacob-vizek-FCSQRPEtXVI-unsplash.jpg?t=1718474041"
 webUrl: "https://ryancombes.com/p/billionaire-entrepreneur-startup-skills"
 tags: []
-backup_date: "2025-10-05T03:06:48.373Z"
+backup_date: "2025-10-06T15:21:05.890Z"
 beehiiv_id: "post_e99c8bb5-3e2d-4a01-aedd-9c3d663a9371"
 ---
 
@@ -21,5 +21,5 @@ Billionaire s essential skill for startup success (It s not sales) Ryan Combes S
 ---
 
 **Original URL:** https://ryancombes.com/p/billionaire-entrepreneur-startup-skills
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_e99c8bb5-3e2d-4a01-aedd-9c3d663a9371

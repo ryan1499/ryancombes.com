@@ -6,7 +6,7 @@ publishedAt: "2024-11-16T18:40:56.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/c9cc2345-38fc-4eb3-b8ec-5ff5ae33b159/fear-of-happiness.png?t=1731782400"
 webUrl: "https://ryancombes.com/p/my-fear-of-happiness"
 tags: ["inner work"]
-backup_date: "2025-10-05T03:07:01.947Z"
+backup_date: "2025-10-06T15:21:21.415Z"
 beehiiv_id: "post_953084c9-54cf-4e38-af9a-8f5519f56578"
 ---
 
@@ -21,5 +21,5 @@ My fear of happiness What preparation stripped from me Ryan Combes November 16, 
 ---
 
 **Original URL:** https://ryancombes.com/p/my-fear-of-happiness
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_953084c9-54cf-4e38-af9a-8f5519f56578

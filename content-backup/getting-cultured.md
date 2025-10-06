@@ -6,7 +6,7 @@ publishedAt: "2023-05-20T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0ad2f250-41b6-4d0e-8224-3510d46e3ea7/debby-hudson-asviIGR3CPE-unsplash_1_.jpg?t=1684563595"
 webUrl: "https://ryancombes.com/p/getting-cultured"
 tags: []
-backup_date: "2025-10-05T03:06:40.864Z"
+backup_date: "2025-10-06T15:20:56.075Z"
 beehiiv_id: "post_bd2193fc-726d-490c-aa4c-35b1a139b7a9"
 ---
 
@@ -21,5 +21,5 @@ My Ambitious Plan for Getting Cultured Why popular self-help is dramatically inc
 ---
 
 **Original URL:** https://ryancombes.com/p/getting-cultured
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_bd2193fc-726d-490c-aa4c-35b1a139b7a9

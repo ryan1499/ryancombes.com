@@ -6,7 +6,7 @@ publishedAt: "2023-02-26T10:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/e1ce277d-4da2-4bc8-91f0-ca1181aa5c13/natasha-t-pKqmnXzJR74-unsplash.jpg?t=1678703379"
 webUrl: "https://ryancombes.com/p/finding-bliss"
 tags: []
-backup_date: "2025-10-05T03:06:31.074Z"
+backup_date: "2025-10-06T15:20:45.403Z"
 beehiiv_id: "post_13e11f50-133b-494a-98c3-6d07763521c8"
 ---
 
@@ -21,5 +21,5 @@ How to Find Bliss Lessons from one of the most blissful moments of my life Ryan 
 ---
 
 **Original URL:** https://ryancombes.com/p/finding-bliss
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_13e11f50-133b-494a-98c3-6d07763521c8

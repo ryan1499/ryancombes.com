@@ -6,7 +6,7 @@ publishedAt: "2024-11-11T17:18:22.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/53611ed1-6793-4b70-adc2-31edcc9564f8/alive-tn.png?t=1731345422"
 webUrl: "https://ryancombes.com/p/alive"
 tags: ["inner work"]
-backup_date: "2025-10-05T03:07:01.151Z"
+backup_date: "2025-10-06T15:21:20.634Z"
 beehiiv_id: "post_445f50f8-b8e1-4d31-9bd2-11b9c0b7e595"
 ---
 
@@ -21,5 +21,5 @@ What s alive? On the norms of vitality Ryan Combes November 11, 2024 Hey Friend,
 ---
 
 **Original URL:** https://ryancombes.com/p/alive
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_445f50f8-b8e1-4d31-9bd2-11b9c0b7e595

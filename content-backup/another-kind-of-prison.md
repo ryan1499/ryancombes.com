@@ -6,7 +6,7 @@ publishedAt: "2025-08-30T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/648d9c6a-da8b-45f4-988d-11020ad621ea/Another_Kind_of_Prison_1.png?t=1755794621"
 webUrl: "https://ryancombes.com/p/another-kind-of-prison"
 tags: []
-backup_date: "2025-10-05T03:07:08.186Z"
+backup_date: "2025-10-06T15:21:28.839Z"
 beehiiv_id: "post_9d89cbd7-a7c9-4bc1-a5d6-89bd556d464d"
 ---
 
@@ -21,5 +21,5 @@ Another Kind of Prison What I learned after I finally got the life I wanted Ryan
 ---
 
 **Original URL:** https://ryancombes.com/p/another-kind-of-prison
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_9d89cbd7-a7c9-4bc1-a5d6-89bd556d464d

@@ -6,7 +6,7 @@ publishedAt: "2023-04-30T11:30:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/cb00579a-95bc-46ad-9e70-aef659bf1b3b/robin-worrall-FPt10LXK0cg-unsplash.jpg?t=1682847502"
 webUrl: "https://ryancombes.com/p/reinvent-yourself"
 tags: []
-backup_date: "2025-10-05T03:06:38.229Z"
+backup_date: "2025-10-06T15:20:53.284Z"
 beehiiv_id: "post_bb8bb51e-e71b-4858-bf16-e23c0ec64f58"
 ---
 
@@ -21,5 +21,5 @@ How to Reinvent Yourself My extreme experiment in digital minimalism Ryan Combes
 ---
 
 **Original URL:** https://ryancombes.com/p/reinvent-yourself
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_bb8bb51e-e71b-4858-bf16-e23c0ec64f58

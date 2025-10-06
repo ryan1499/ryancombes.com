@@ -6,7 +6,7 @@ publishedAt: "2023-08-06T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0a59f2f1-cdd4-4cad-8be0-29181f347f9b/steven-wright-mq8QogEBy00-unsplash.jpg?t=1718474191"
 webUrl: "https://ryancombes.com/p/anxiety-purpose-zoom-in-out"
 tags: ["wholeness","masculinity"]
-backup_date: "2025-10-05T03:06:46.672Z"
+backup_date: "2025-10-06T15:21:03.594Z"
 beehiiv_id: "post_1bd1221a-0595-442c-bc36-8824f1dec8ee"
 ---
 
@@ -21,5 +21,5 @@ Zooming in and Zooming Out What helped me find calm and purpose in a chaotic wor
 ---
 
 **Original URL:** https://ryancombes.com/p/anxiety-purpose-zoom-in-out
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_1bd1221a-0595-442c-bc36-8824f1dec8ee

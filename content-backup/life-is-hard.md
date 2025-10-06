@@ -6,7 +6,7 @@ publishedAt: "2023-02-03T11:22:46.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/d231cc28-ac50-4095-9ecd-66dc005d6579/christopher-lemercier-12yvdCiLaVE-unsplash.jpg?t=1678703479"
 webUrl: "https://ryancombes.com/p/life-is-hard"
 tags: []
-backup_date: "2025-10-05T03:06:29.460Z"
+backup_date: "2025-10-06T15:20:43.808Z"
 beehiiv_id: "post_0e1dac39-5e1f-4246-85a3-895f36ae93b1"
 ---
 
@@ -21,5 +21,5 @@ Life is Hard And that s okay. Ryan Combes February 03, 2023 Hey friend, Life is 
 ---
 
 **Original URL:** https://ryancombes.com/p/life-is-hard
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_0e1dac39-5e1f-4246-85a3-895f36ae93b1

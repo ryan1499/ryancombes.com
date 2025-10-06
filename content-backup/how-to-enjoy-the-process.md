@@ -6,7 +6,7 @@ publishedAt: "2022-11-09T15:24:19.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/d71cf260-a6ce-4e1c-85f0-094575541368/kal-visuals-aK4iPNYipnU-unsplash.jpg?t=1668008094"
 webUrl: "https://ryancombes.com/p/how-to-enjoy-the-process"
 tags: []
-backup_date: "2025-10-05T03:06:24.438Z"
+backup_date: "2025-10-06T15:20:38.909Z"
 beehiiv_id: "post_aa976302-7989-4a18-be36-20f88095e022"
 ---
 
@@ -19,5 +19,5 @@ How to Enjoy the Process - A Lesson to My Younger Self Ryan Combes November 09, 
 ---
 
 **Original URL:** https://ryancombes.com/p/how-to-enjoy-the-process
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_aa976302-7989-4a18-be36-20f88095e022

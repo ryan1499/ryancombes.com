@@ -6,7 +6,7 @@ publishedAt: "2025-10-04T13:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/publication/thumbnail/d7682eb0-5603-434c-8b88-35690c42c08a/landscape_20200526_093814.jpg"
 webUrl: "https://ryancombes.com/p/the-cost-of-survival"
 tags: []
-backup_date: "2025-10-05T03:07:11.516Z"
+backup_date: "2025-10-06T15:21:32.436Z"
 beehiiv_id: "post_d8e20b32-9323-4365-b91a-5fba02eff97f"
 ---
 
@@ -21,5 +21,5 @@ The Cost of Survival What we trade for safety, and how to choose life instead Ry
 ---
 
 **Original URL:** https://ryancombes.com/p/the-cost-of-survival
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_d8e20b32-9323-4365-b91a-5fba02eff97f

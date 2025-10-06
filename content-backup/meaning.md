@@ -6,7 +6,7 @@ publishedAt: "2023-07-04T12:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/fdfb8c40-0b7d-4f00-bd78-965fa112f970/jon-tyson-c6b2ru3S4qo-unsplash.jpg?t=1688425502"
 webUrl: "https://ryancombes.com/p/meaning"
 tags: ["wholeness"]
-backup_date: "2025-10-05T03:06:45.841Z"
+backup_date: "2025-10-06T15:21:02.614Z"
 beehiiv_id: "post_a44ef3a9-cd15-4f70-a011-bd222832e2b4"
 ---
 
@@ -21,5 +21,5 @@ How to Live Meaningfully What digital nomadism taught me about a life well lived
 ---
 
 **Original URL:** https://ryancombes.com/p/meaning
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_a44ef3a9-cd15-4f70-a011-bd222832e2b4

@@ -6,7 +6,7 @@ publishedAt: "2025-02-24T14:00:00.000Z"
 thumbnailUrl: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ee273dcb-320b-478b-87c7-10ee420b6de1/LTaF_Thumbnail_75.png?t=1753621579"
 webUrl: "https://ryancombes.com/p/lifting-my-gaze"
 tags: ["wholeness"]
-backup_date: "2025-10-05T03:07:03.503Z"
+backup_date: "2025-10-06T15:21:23.087Z"
 beehiiv_id: "post_b9cebdd1-002b-4baa-8009-5e7d2f0042c3"
 ---
 
@@ -21,5 +21,5 @@ Lifting My Gaze The Hidden Hazards of Therapy and Self-Improvement Ryan Combes F
 ---
 
 **Original URL:** https://ryancombes.com/p/lifting-my-gaze
-**Backup Date:** 10/5/2025
+**Backup Date:** 10/6/2025
 **Beehiiv ID:** post_b9cebdd1-002b-4baa-8009-5e7d2f0042c3
