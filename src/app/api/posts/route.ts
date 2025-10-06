@@ -2,34 +2,9 @@ import { NextResponse } from 'next/server'
 import { FEATURED_POST_SLUGS } from '@/lib/constants'
 import type { BeehiivPost, TransformedPost } from '@/types'
 
-interface BeehiivPost {
-  id: string;
-  title: string;
-  subtitle?: string;
-  slug: string;
-  published_at: number;
-  publish_date?: string;
-  web_url: string;
-  thumbnail_url?: string;
-  excerpt?: string;
-  content_tags?: string[];
-  content?: { free?: { web?: string } };
-  free_web_content?: string;
-  content_html?: string;
-  meta_default_description?: string;
-};
+// BeehiivPost type imported from shared types
 
-interface TransformedPost {
-  id: string;
-  title: string;
-  subtitle: string;
-  excerpt?: string;
-  publishedAt: string;
-  slug: string;
-  thumbnailUrl?: string;
-  webUrl: string;
-  tags: string[];
-}
+// TransformedPost type imported from shared types
 
 export async function GET() {
   try {
