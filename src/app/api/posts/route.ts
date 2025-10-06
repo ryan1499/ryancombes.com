@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server'
+import { FEATURED_POST_SLUGS } from '@/lib/constants'
+import type { BeehiivPost, TransformedPost } from '@/types'
 
 interface BeehiivPost {
   id: string;
@@ -65,7 +67,7 @@ export async function GET() {
     const data = await response.json();
     
     // Featured post slugs - these are the ONLY posts we want for the homepage (optimized for performance)
-    const featuredSlugs = ['the-cost-of-survival', 'achievement-isnt-enough', 'power-is-not-love'];
+    const featuredSlugs = FEATURED_POST_SLUGS;
     
     // Transform and filter the data to match our frontend needs
     const allPosts: TransformedPost[] = data.data?.filter((post: BeehiivPost) => {
