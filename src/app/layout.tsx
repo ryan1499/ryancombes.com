@@ -88,6 +88,23 @@ export default function RootLayout({
         <link rel="preload" href="/profile.png" as="image" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
+        {/* Google Analytics */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

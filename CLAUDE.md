@@ -15,6 +15,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Environment Variables Required
 - `BEEHIIV_API_KEY` - API key for Beehiiv newsletter service
 - `BEEHIIV_PUBLICATION_ID` - Publication ID for the newsletter
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` - Google Analytics 4 measurement ID (G-5J0XCXZDNR)
 
 ## Architecture Overview
 
