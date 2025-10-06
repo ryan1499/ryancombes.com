@@ -112,9 +112,9 @@ export default function PostClient({ post }: PostClientProps) {
             )}
             
             <div className="flex items-center justify-between text-sm border-b pb-4 mb-4" style={{borderColor: '#DFDFDF', color: '#5A5856'}}>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
                 <span>By Ryan Combes</span>
-                <span>•</span>
+                <span className="text-center">•</span>
                 <time dateTime={(() => {
                   const num = Number(post.publishedAt);
                   if (!isNaN(num)) {
@@ -125,7 +125,7 @@ export default function PostClient({ post }: PostClientProps) {
                 })()}>
                   {formatDate(post.publishedAt)}
                 </time>
-                <span>•</span>
+                <span className="text-center">•</span>
                 <span>{post.readTime}</span>
               </div>
             </div>
