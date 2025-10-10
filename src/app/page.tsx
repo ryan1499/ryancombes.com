@@ -122,11 +122,11 @@ export default function Home() {
             </h1>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal mb-6 text-brand-muted">
-	I grew up in survivalist fear. Now I write about the courage to live.
+	I explore fear, courage, and what it means to become whole — one honest story at a time. 
             </p>
             
             <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-normal text-brand-muted">
-Join me in exploring what it means to live brave enough. 
+Join me below. 👇
 </p>
           </motion.div>
 
