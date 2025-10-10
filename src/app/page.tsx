@@ -141,7 +141,7 @@ Join me below. 👇
               Brave Enough Newsletter
             </h2>
             <p className="mb-6 text-base font-normal text-brand-muted">
-            Weekly letters on building the courage that matters most.
+            Weekly letters on finding the courage that matters most.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-5">
               <input
